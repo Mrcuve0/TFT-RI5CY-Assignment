@@ -1,5 +1,5 @@
-li t0, 0x94be2614
-li t1, 0x6a1f0353
+li t0, 0x301111c1
+li t1, 0x536743c2
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -9,8 +9,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x79ad66ae
-li t1, 0x79ad0ca0
+li t0, 0xcdd16111
+li t1, 0xcdd16e28
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -20,8 +20,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x93488081
-li t1, 0x7f5ca51e
+li t0, 0x57ea513b
+li t1, 0xbc50c25
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -31,8 +31,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xaadbe110
-li t1, 0xaa26a28b
+li t0, 0x7719a279
+li t1, 0x11a3187
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -42,8 +42,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x147ee0cd
-li t1, 0x24084c97
+li t0, 0xa0094e7f
+li t1, 0xaa0a04d7
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -53,8 +53,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x7f87125b
-li t1, 0x2501f77
+li t0, 0xbcbb0c3
+li t1, 0x58240903
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -64,8 +64,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x3800000e
-li t1, 0x53db8d76
+li t0, 0x69df64e7
+li t1, 0x520b319c
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -75,8 +75,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x3197ffe
-li t1, 0xca4cd089
+li t0, 0x9130490a
+li t1, 0x3775906b
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -86,8 +86,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x43c34020
-li t1, 0xcc343e8e
+li t0, 0x71a4504
+li t1, 0x275e3065
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -97,8 +97,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x107012f0
-li t1, 0x810b2225
+li t0, 0x98988205
+li t1, 0x99578205
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -108,8 +108,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x7a7532a8
-li t1, 0x1020dd3
+li t0, 0x7ca9c011
+li t1, 0x43443074
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -119,8 +119,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x4092c233
-li t1, 0x5a5c14b9
+li t0, 0xc326235b
+li t1, 0x162e35c5
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -130,8 +130,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xb3803273
-li t1, 0x8aa74f30
+li t0, 0x83ae1470
+li t1, 0x83004b01
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -141,8 +141,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x1cee6170
-li t1, 0xf51a856
+li t0, 0x84f34a2c
+li t1, 0x39c93e5b
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -152,8 +152,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x2894bb17
-li t1, 0x7744c063
+li t0, 0x8ac102c7
+li t1, 0x902747f5
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -163,8 +163,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xf60ffaaa
-li t1, 0xf60dfaaa
+li t0, 0x6d3f8be9
+li t1, 0x6d92903a
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -174,8 +174,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x844e4208
-li t1, 0x3dc23777
+li t0, 0x9e188672
+li t1, 0x8836a72f
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -185,8 +185,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x49f427e7
-li t1, 0x9df5401a
+li t0, 0x7edc620b
+li t1, 0x3ee95827
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -196,8 +196,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x20357be0
-li t1, 0x72214a1d
+li t0, 0x4a0133b
+li t1, 0x27af5c86
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -207,8 +207,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xc3e93d6b
-li t1, 0xb9f2a000
+li t0, 0x9d6c8ad
+li t1, 0x13d50de
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -218,8 +218,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x92b28b9a
-li t1, 0x49b287f2
+li t0, 0xf9f0f3d
+li t1, 0x40519083
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -229,8 +229,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x8797e2fc
-li t1, 0x873a842d
+li t0, 0x94a109c4
+li t1, 0xfbe64864
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -240,8 +240,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x1d813f
-li t1, 0x7e411c20
+li t0, 0x9912a111
+li t1, 0x311dd17f
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -251,8 +251,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x22404a80
-li t1, 0xf8af8e96
+li t0, 0x160925e4
+li t1, 0xce7f8c50
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -262,8 +262,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x9ca623
-li t1, 0x78d29e0b
+li t0, 0x8060026e
+li t1, 0x1a5555b0
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -273,8 +273,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x7d660058
-li t1, 0x16901b7
+li t0, 0x7eec8c28
+li t1, 0x1906037f
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -284,8 +284,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xac5327b7
-li t1, 0x7984443d
+li t0, 0x75303d6a
+li t1, 0x4e6f945a
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -295,8 +295,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x68cec012
-li t1, 0x88d38d73
+li t0, 0xbb218b05
+li t1, 0x847f7615
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -306,8 +306,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x91d3207e
-li t1, 0x91d3207e
+li t0, 0x44a33ae8
+li t1, 0x99a2715f
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -317,8 +317,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x5199b819
-li t1, 0xeb0f0318
+li t0, 0xf8a04db6
+li t1, 0xf8830fc2
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -328,8 +328,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x35b2f072
-li t1, 0x765427cd
+li t0, 0x135d9936
+li t1, 0xdde5041
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -339,8 +339,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x994d5da1
-li t1, 0x994d5da1
+li t0, 0xa6dc04c7
+li t1, 0x471c513c
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -350,8 +350,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xac0485d
-li t1, 0xfa3f0d3c
+li t0, 0x7d37c7cc
+li t1, 0xd801e960
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -361,8 +361,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x1800d603
-li t1, 0x255fa1d8
+li t0, 0xb5043531
+li t1, 0xb5487619
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -372,8 +372,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x50412359
-li t1, 0xd1d0dbb
+li t0, 0x9006201d
+li t1, 0xcc4f336a
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -383,8 +383,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xe4945002
-li t1, 0xbf80c08
+li t0, 0x1a2a3527
+li t1, 0x9a924fca
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -394,8 +394,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x36006492
-li t1, 0x97992d9a
+li t0, 0x8c6d600c
+li t1, 0xb1419181
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -405,8 +405,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x594105bd
-li t1, 0x20665021
+li t0, 0xc773509c
+li t1, 0xc7736be9
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -416,8 +416,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xfeed2f7
-li t1, 0x8d888
+li t0, 0x66800000
+li t1, 0x612203ac
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -427,8 +427,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x747d324e
-li t1, 0x17bb34b7
+li t0, 0x3b3bfd62
+li t1, 0x7b8e1e12
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -438,8 +438,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x41441c33
-li t1, 0x1c2fc004
+li t0, 0xd0015c00
+li t1, 0x3a716066
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -449,8 +449,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x804a367
-li t1, 0x6255285b
+li t0, 0xbfddd70e
+li t1, 0xbff762db
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -460,8 +460,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x6abc3f91
-li t1, 0x10432
+li t0, 0x62203005
+li t1, 0x37683433
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -471,8 +471,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x1261e623
-li t1, 0x7083704d
+li t0, 0x4d364f5b
+li t1, 0x6dc9051d
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -482,8 +482,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x425147f3
-li t1, 0x55ba1898
+li t0, 0x689c14f5
+li t1, 0x10e18a
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -493,8 +493,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x99d21b3
-li t1, 0x9b026240
+li t0, 0xf91ba725
+li t1, 0xf9cf2109
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -504,8 +504,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x4dd800c1
-li t1, 0xa8421d7b
+li t0, 0x3c1dc98c
+li t1, 0x1a242b57
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -515,8 +515,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x18081153
-li t1, 0x3003c8d6
+li t0, 0x4940064f
+li t1, 0x4927a5cf
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -526,8 +526,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xa77ce508
-li t1, 0x9e9efd5e
+li t0, 0xe0f0c776
+li t1, 0x9beded11
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -537,8 +537,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x9147087b
-li t1, 0xfe1f023d
+li t0, 0xaa75cb3f
+li t1, 0xaa030012
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -548,8 +548,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x17762238
-li t1, 0x5f8f69cb
+li t0, 0x6a7be39a
+li t1, 0x6af5f69d
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -559,8 +559,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xd48b31f6
-li t1, 0xd48b1910
+li t0, 0x15306434
+li t1, 0x170b941b
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -570,8 +570,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x4051262f
-li t1, 0x665e2bf3
+li t0, 0xd424f23b
+li t1, 0xf05180dc
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -581,8 +581,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xef1fa11c
-li t1, 0xef005647
+li t0, 0x54b4700
+li t1, 0x798107d
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -592,8 +592,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x76711df
-li t1, 0x680c56e1
+li t0, 0xea12791d
+li t1, 0xf928c16e
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -603,8 +603,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x43086176
-li t1, 0x4308202c
+li t0, 0xff3b9bf6
+li t1, 0xfec0016c
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -614,8 +614,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xfc035196
-li t1, 0x94f90a55
+li t0, 0xc9b03f78
+li t1, 0x2abf9925
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -625,8 +625,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x97dc4801
-li t1, 0xd7dc1df6
+li t0, 0x2d0a0d21
+li t1, 0x25c0dc60
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -636,8 +636,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xabbe06bb
-li t1, 0xabbe06bb
+li t0, 0xe4c81fbc
+li t1, 0xb55fcc92
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -647,8 +647,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x8eb25a87
-li t1, 0xae8e3630
+li t0, 0x6d16de90
+li t1, 0x8466e2b0
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -658,8 +658,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x6ac0d1e5
-li t1, 0x2be5695
+li t0, 0xf2640fde
+li t1, 0x5aafe649
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -669,8 +669,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x7f4f6c1c
-li t1, 0x7f4f0388
+li t0, 0x368b0e48
+li t1, 0x4133305c
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -680,8 +680,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x1b203ef2
-li t1, 0xd57f724a
+li t0, 0x713a07ef
+li t1, 0x2557f324
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -691,8 +691,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x62869164
-li t1, 0x62862b2c
+li t0, 0x37907c3a
+li t1, 0x3f907c3a
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -702,8 +702,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xc48b500
-li t1, 0x12fccd6
+li t0, 0x549c0725
+li t1, 0x81e9a80f
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -713,8 +713,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x4dd170fc
-li t1, 0x96bc0ca1
+li t0, 0xae2e1b7c
+li t1, 0xbe7841bd
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -724,8 +724,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x43e90941
-li t1, 0x435f7aaa
+li t0, 0xe04e07c8
+li t1, 0x44f45497
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -735,8 +735,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x89d081
-li t1, 0x7c343c31
+li t0, 0x3a062870
+li t1, 0xba9f6527
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -746,8 +746,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xe0879187
-li t1, 0xbbb0863f
+li t0, 0x809b06f9
+li t1, 0xa0a2820c
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -757,8 +757,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xa1da0400
-li t1, 0x6e0c51f5
+li t0, 0xade07a55
+li t1, 0xac8d20e1
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -768,8 +768,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x20033e53
-li t1, 0x78520d55
+li t0, 0x90418448
+li t1, 0x5121a909
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -779,8 +779,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xfb010b00
-li t1, 0xf4494f
+li t0, 0x584d37cd
+li t1, 0x5c104060
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -790,8 +790,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xcca24fbb
-li t1, 0x29c7d037
+li t0, 0xbebcc510
+li t1, 0xf9785c8b
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -801,8 +801,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xb6e88f40
-li t1, 0xb659846e
+li t0, 0xf76391d
+li t1, 0x1f825f86
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -812,8 +812,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x4b080255
-li t1, 0x9e57fd7f
+li t0, 0x8f466288
+li t1, 0x74bc0e45
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -823,8 +823,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x2fabc011
-li t1, 0x2fabc211
+li t0, 0xd0bb4c8e
+li t1, 0xa1412395
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -834,8 +834,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x44c2a8
-li t1, 0x681d556a
+li t0, 0x93333670
+li t1, 0xabb6bf2d
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -845,8 +845,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x1103c24a
-li t1, 0x1103c2ca
+li t0, 0x46156850
+li t1, 0x469a0318
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -856,8 +856,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x6a7629d4
-li t1, 0x22932885
+li t0, 0x49989b39
+li t1, 0xd5db5d96
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -867,8 +867,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x482b67a3
-li t1, 0x486b0815
+li t0, 0xcf0bc649
+li t1, 0x4f5c57fd
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -878,8 +878,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x31f4788
-li t1, 0x550800bf
+li t0, 0x3050caa9
+li t1, 0xaf0507c4
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -889,8 +889,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x46a0d2c
-li t1, 0x4f8d62de
+li t0, 0xb4cc41fa
+li t1, 0xb01c81c0
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -900,8 +900,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xd1a666a0
-li t1, 0x61a60857
+li t0, 0x98286554
+li t1, 0x548283e2
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -911,8 +911,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xd380225e
-li t1, 0xd3887ea7
+li t0, 0xa466a0ff
+li t1, 0xa50e40e2
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -922,8 +922,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xc0b67c97
-li t1, 0x31d73021
+li t0, 0x4c1432aa
+li t1, 0x2ac141f1
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -933,8 +933,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x22d45617
-li t1, 0x8be9bc3
+li t0, 0x1b1b507f
+li t1, 0x19c7a071
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -944,8 +944,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xcbd5028
-li t1, 0x105ef3
+li t0, 0xf2961e61
+li t1, 0x948808f7
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -955,8 +955,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x19234687
-li t1, 0xa44f85dd
+li t0, 0xb89100e4
+li t1, 0x3f9ba02
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -966,8 +966,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x77165e97
-li t1, 0x2cd5187d
+li t0, 0xafd70804
+li t1, 0x8acac74
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -977,8 +977,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x77fc8633
-li t1, 0x90968e6
+li t0, 0x97c0e5a9
+li t1, 0xd746f63b
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -988,8 +988,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x7b8b602f
-li t1, 0x966a3518
+li t0, 0x56eb8402
+li t1, 0x65d6563a
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -999,8 +999,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xbe4e39
-li t1, 0x749d7853
+li t0, 0x64e073d4
+li t1, 0x24237b9d
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -1010,8 +1010,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x3535ec87
-li t1, 0x3aa237ca
+li t0, 0xefe9c535
+li t1, 0x93038312
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -1021,8 +1021,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xc6454901
-li t1, 0x9afe0066
+li t0, 0x18781b31
+li t1, 0x82b97f4
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -1032,8 +1032,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xc43fe643
-li t1, 0x80c110e5
+li t0, 0x7ff4e29a
+li t1, 0xc981c189
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -1043,8 +1043,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x7028d3e7
-li t1, 0xc7ad860c
+li t0, 0x84bc0d98
+li t1, 0xa495cbfa
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -1054,8 +1054,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x6077e483
-li t1, 0xeddceb7
+li t0, 0xcb667679
+li t1, 0xe52848cb
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -1065,8 +1065,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x1c61188c
-li t1, 0x7822d5f2
+li t0, 0x6c562417
+li t1, 0x4cf0cfc7
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -1076,8 +1076,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xbab98a43
-li t1, 0x4991bad6
+li t0, 0x292f3c08
+li t1, 0x737c8c6a
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -1087,8 +1087,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x261cbb9d
-li t1, 0x2e1c1e51
+li t0, 0xb22330d0
+li t1, 0xbac24dd9
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -1098,8 +1098,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x8c94e129
-li t1, 0xa0b8d303
+li t0, 0x14979e04
+li t1, 0x3dbe4635
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -1109,8 +1109,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x3c08ad62
-li t1, 0x3d08170c
+li t0, 0xd3919868
+li t1, 0xd76126ec
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -1120,8 +1120,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0xe8ee64a4
-li t1, 0xd1646ff1
+li t0, 0x884bcf02
+li t1, 0x1cdf231a
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0
@@ -1131,2582 +1131,8 @@ sw t2, 4(sp)
 sub t2, t1, t1
 sw t2, 4(sp)
 
-li t0, 0x28310d2
-li t1, 0x68c6fe7
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x4777300b
-li t1, 0x593217e0
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xa7c8c05e
-li t1, 0xa65559d2
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x3bbb9825
-li t1, 0x34191a40
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x34f885f4
-li t1, 0xb4e7b0c9
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x960fb890
-li t1, 0x7a73c865
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xc781480d
-li t1, 0xc57e1260
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xd49598ca
-li t1, 0xffe6a167
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x494808c2
-li t1, 0x59483416
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x773218e7
-li t1, 0xe20f35e6
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xa67251dc
-li t1, 0xe6721c51
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x941c0873
-li t1, 0xb3262ef3
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x5c51e166
-li t1, 0x54515beb
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x4af802bb
-li t1, 0x700a082c
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xf80489c0
-li t1, 0xc2f2bf8b
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x29ae395d
-li t1, 0x97962016
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x55e26ce8
-li t1, 0x55a2018a
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x9da5082c
-li t1, 0xe874d55e
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x40786baa
-li t1, 0x3682a0a2
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x6e92a416
-li t1, 0x5fa2aaf
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xc79b1500
-li t1, 0xdee64316
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xe74925a9
-li t1, 0x2fd25a9
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x94ca99ed
-li t1, 0x94cac381
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x1a00a305
-li t1, 0x7faabaf
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xc7c371e1
-li t1, 0xc7c771e1
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xc82a0b16
-li t1, 0xc82abde7
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x34148f4
-li t1, 0x35148f4
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xb3e80587
-li t1, 0x79e8def2
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xd2737ab6
-li t1, 0xd2f37ab6
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xbfd289e5
-li t1, 0x4ee7f2b5
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x1d7ea0dd
-li t1, 0x1d7e80dd
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xb9ab71f5
-li t1, 0x550a2ea4
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x13231184
-li t1, 0x13231194
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xb097a000
-li t1, 0xd6fc97cb
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x7fba1e8a
-li t1, 0x38dd4548
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x1d4ad660
-li t1, 0x6c7f4bc5
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x25e3ffc3
-li t1, 0x25e2ffc3
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x88c79fab
-li t1, 0xd443b5a3
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x26c6854
-li t1, 0x26c6854
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xf473f004
-li t1, 0x22220c06
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x73898fe
-li t1, 0x73998fe
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x3c7af329
-li t1, 0x43681bcd
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x390fefcb
-li t1, 0x392fefcb
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x933df8ae
-li t1, 0x93b40804
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xa9e15da9
-li t1, 0x84e15da9
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xcf1efcca
-li t1, 0x70da06f3
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xc2196099
-li t1, 0x60a01bca
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xa1cd456b
-li t1, 0xda145e1d
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x7fb44042
-li t1, 0x3010bff
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x36a4b88b
-li t1, 0x1f73f79a
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x5d336ef
-li t1, 0x25d31685
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x8312d8c5
-li t1, 0x1ef9f14d
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x1083c011
-li t1, 0xa62b9f5a
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xeb8b074c
-li t1, 0x35a52562
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xb7e0105
-li t1, 0xb7a7833
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xf5b593a6
-li t1, 0x1abaa2b1
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xf3a7be82
-li t1, 0xd67841f
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x1cb822fd
-li t1, 0x7f107c9c
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x7e5d404f
-li t1, 0x4e8dd96
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xe81eaa50
-li t1, 0xdf1cb8a
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x88608029
-li t1, 0xfa6a2351
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xf40f7d50
-li t1, 0x6f84550
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x9e9dee1c
-li t1, 0x9e9deea0
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xba075c94
-li t1, 0x437c5ce2
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xbe270d49
-li t1, 0xbe27e149
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x3d03cd4a
-li t1, 0x1be3971
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x994900c5
-li t1, 0x3f1444aa
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x3e81e6a5
-li t1, 0xdf1cb8
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x28860202
-li t1, 0x57a6f035
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xa902d87c
-li t1, 0x72161b98
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xc34a810f
-li t1, 0xca00bd80
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xb5c37610
-li t1, 0xc872a508
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x19a85089
-li t1, 0x70df055a
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xbf23b0a6
-li t1, 0x97c0efc0
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x29c2e4a
-li t1, 0x6041ddb7
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xdf91d853
-li t1, 0x4be077e0
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x507ff25
-li t1, 0x70a028db
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x98a7707
-li t1, 0x57890034
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x1d98239c
-li t1, 0xb00638f7
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xe4c56ba0
-li t1, 0xbc4c11e
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x5fe411ce
-li t1, 0x8df2c7b
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x6430b2ef
-li t1, 0x279bdc49
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x782598bb
-li t1, 0x783598bb
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x32084155
-li t1, 0x93cdce24
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x123238ff
-li t1, 0x123238ff
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xd8082cb0
-li t1, 0xc8e6f712
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xd3a503e
-li t1, 0x56d2769
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xc484165d
-li t1, 0xe0f37b89
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xb01d101d
-li t1, 0x37b6db34
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x8b06a60d
-li t1, 0x7c962fce
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xed7d00cc
-li t1, 0xcd7d6bce
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xd5835206
-li t1, 0xae4b16e7
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x8d14b634
-li t1, 0x8d14b734
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x41c72f8e
-li t1, 0xbb3843d
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x22d75b5f
-li t1, 0x22d77b5f
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xbe5214a
-li t1, 0x594ffdd0
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x3058096
-li t1, 0x3058016
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xaef4b6e8
-li t1, 0x70319126
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x95e38095
-li t1, 0x32098526
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x577a1b74
-li t1, 0x3818e893
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x6af1c04a
-li t1, 0x104c293
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x80bbabb7
-li t1, 0x409a5b87
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x7c20e269
-li t1, 0xe5ce0c87
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x404dd5db
-li t1, 0xa05d2dc3
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x95b77034
-li t1, 0x95a706c3
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x8a284ce0
-li t1, 0x8cb0b92f
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x95803bf6
-li t1, 0x942fe86f
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x45942670
-li t1, 0x46585c97
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x42481c7b
-li t1, 0x4348f637
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xa2ca1338
-li t1, 0x632c2e4b
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xdf200f3d
-li t1, 0x9f4bf91b
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xfa63af91
-li t1, 0x4d0038eb
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x858806d2
-li t1, 0x95299143
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x463771c5
-li t1, 0xfa1633bb
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x98371325
-li t1, 0x883706ef
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x2b1bb8e2
-li t1, 0xfd0b19dd
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xa8500192
-li t1, 0xaa503b77
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xbc8b7a7c
-li t1, 0x2213a320
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x2bb9e005
-li t1, 0x29b94675
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xdf45bd3e
-li t1, 0x1109d190
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x774b102
-li t1, 0xf74203a
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x44a47892
-li t1, 0xd412c706
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xfb3bc0cd
-li t1, 0x7b3bfe53
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xc9549a44
-li t1, 0xf69f4c4d
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x861e0aa
-li t1, 0x88e710e7
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xa0aa4d22
-li t1, 0x3f4fa626
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x2db0f055
-li t1, 0x29738873
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xd6552691
-li t1, 0x1da7d313
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xb319782a
-li t1, 0xb719c439
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xe92a9348
-li t1, 0x8ed3e989
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x11dfaf80
-li t1, 0x119faf80
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x749749a4
-li t1, 0x4769f4c4
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xa4dd7046
-li t1, 0xa4df7046
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x914c02df
-li t1, 0x7f22d5ac
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x87e624c1
-li t1, 0x87e424c1
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x63a0a762
-li t1, 0xe3074518
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x4411a29f
-li t1, 0x4431a29f
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x1ad6f5bc
-li t1, 0x2d358d42
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xa37ae0d5
-li t1, 0xa35ae0d5
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x8d6f7ade
-li t1, 0x168ac6a1
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xb5eb3b81
-li t1, 0xb5ef3b81
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x6d331b62
-li t1, 0x57d34c9e
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x28a9486c
-li t1, 0x2829486c
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x36d90db1
-li t1, 0x2b69264f
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x81e2c855
-li t1, 0x81e2c855
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x5835306a
-li t1, 0xe4317e74
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x7f3cf287
-li t1, 0x7fbcf287
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xac129835
-li t1, 0x7258bf3a
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x46fb7c1f
-li t1, 0x46f37c1f
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x560d4c1a
-li t1, 0xb92c5f9d
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xec755598
-li t1, 0xec7d5598
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x6388b38a
-li t1, 0xb91c4b8c
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x589b5040
-li t1, 0x589b5140
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x31c461c5
-li t1, 0x5c8e2946
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x1b27db0
-li t1, 0x1b275b0
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xfb6a9f68
-li t1, 0x175b582f
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x4e09fc5a
-li t1, 0x4e09fc52
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x1e3dfe3e
-li t1, 0xb2b1e69b
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xb4f96627
-li t1, 0xb4f96427
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xec964d95
-li t1, 0xe044b1c1
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xc43b80f3
-li t1, 0xc43b88f3
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xf64b26ca
-li t1, 0xf0225ce0
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x41d075e8
-li t1, 0x41d035e8
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x18ad00ef
-li t1, 0xc10d44fc
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xccce6286
-li t1, 0xccce4286
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xc569077
-li t1, 0xe086b27e
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x86a5192f
-li t1, 0x86a5092f
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xe5a3fbb1
-li t1, 0x495f13b3
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x3c7faac7
-li t1, 0x3c7faec7
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xf2d1fdd8
-li t1, 0xa4af89d9
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x72d39517
-li t1, 0x72d3d517
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x7968feec
-li t1, 0x5257c5ec
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xfec5f9cd
-li t1, 0xfec5f8cd
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xdf3cccfc
-li t1, 0x9037a8fa
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xb995d1db
-li t1, 0xb995d1db
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x460b68fa
-li t1, 0x7883cf78
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xcba91be8
-li t1, 0xcba919e8
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x408d04f7
-li t1, 0x855da930
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xfebbcfc4
-li t1, 0xfebbcfc4
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x2046837b
-li t1, 0xc2ae5698
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x43db35cb
-li t1, 0x43dbb5cb
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x73ab7237
-li t1, 0x584ba1c0
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x483eda49
-li t1, 0x483e5a49
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x5a5d4a91
-li t1, 0x15395a6c
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x141c5eca
-li t1, 0x141cdeca
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x2d2ea148
-li t1, 0x8a9ced36
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xb6585ff4
-li t1, 0xb6585bf4
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x969756a4
-li t1, 0x454e769b
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xe7b2504f
-li t1, 0xe7b2544f
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xa5a5c4a9
-li t1, 0x11539da6
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x3e29068
-li t1, 0x3e28068
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xb15a59de
-li t1, 0x31b5845f
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x2e97a032
-li t1, 0x2e97b032
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x1f0d3e1d
-li t1, 0x34ff876e
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x7b6872e2
-li t1, 0x7b6872e3
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x6c0e2c84
-li t1, 0xa363893b
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xef1ea463
-li t1, 0xef1ea462
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xb6071642
-li t1, 0x51b1c49c
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x83147bee
-li t1, 0x83147bef
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x388b383b
-li t1, 0x91c4a832
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xd3f7e90
-li t1, 0xd3f7eb0
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x1c459c45
-li t1, 0xc8e25461
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x2d50bcea
-li t1, 0x2d50bcfa
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x8e22ceea
-li t1, 0xe4712ab0
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x17b5c70c
-li t1, 0x17b5c78c
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xc7116717
-li t1, 0x7238951a
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x1e663ad4
-li t1, 0x1e663ad6
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xe780c98c
-li t1, 0xb8fb1d7f
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x410285c6
-li t1, 0x41028586
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x73c064c4
-li t1, 0x5c7d8ebf
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x8df08707
-li t1, 0x8df08703
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xde60fbea
-li t1, 0x96c5da20
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x1590ece5
-li t1, 0x1590ece1
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x88b0b47d
-li t1, 0xf399f06b
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xabd1db19
-li t1, 0xabd1db1d
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x23d893be
-li t1, 0x4137e540
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x6bc8e2e7
-li t1, 0x6bc8e2ef
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x91ec49d3
-li t1, 0x209bf2a4
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xe0770aca
-li t1, 0xe0770ac2
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xaf76ed65
-li t1, 0x28b6e42f
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xa26a0c1f
-li t1, 0xa26a0c1d
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xd7bb76b2
-li t1, 0x945b7214
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x52b4ede5
-li t1, 0x52b4ede7
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x8c5d72d1
-li t1, 0xf2d6a434
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x82310d9d
-li t1, 0x82310ddd
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x462eb968
-li t1, 0xf96b523a
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x5b75a91
-li t1, 0x5b75a81
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xa3175cb4
-li t1, 0x7cb5a91d
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x51c0ad15
-li t1, 0x51c0ad35
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x360b67d2
-li t1, 0x86a1c9f1
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x86d877e8
-li t1, 0x86d877c8
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x7c857a61
-li t1, 0xfbabf987
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x9dde84be
-li t1, 0x5a801a55
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0xbe42bd30
-li t1, 0xfdd5fcc3
-sub t2, t0, t1
-sw t2, 4(sp)
-sub t2, t1, t0
-sw t2, 4(sp)
-sub t2, t0, t0
-sw t2, 4(sp)
-sub t2, t1, t1
-sw t2, 4(sp)
-
-li t0, 0x4eef626f
-li t1, 0x2d400d7a
+li t0, 0xe1c8cc34
+li t1, 0xe1309376
 sub t2, t0, t1
 sw t2, 4(sp)
 sub t2, t1, t0

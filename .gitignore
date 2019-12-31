@@ -6,6 +6,9 @@ TAGS
 *.vcd
 *.xml
 *.dbg
+*.qdb
+*.qpg
+*.qtl
 *.wlf
 *.elf
 *.hex
@@ -14,6 +17,7 @@ TAGS
 *.json
 *.evcd
 *.evcd.fixed
+
 .build-rtl
 .lib-rtl
 .opt-rtl

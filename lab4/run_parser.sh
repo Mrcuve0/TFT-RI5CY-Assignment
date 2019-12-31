@@ -11,4 +11,4 @@ cd ${run_dir}
 
 ${root_dir}/stil_parser.py ${run_dir}/atpg_patterns.stil > ${sbst_dir}/atpg_patterns.S
 echo "Analyzing the \”run/atpg_patterns.stil\" file ..."
-echo "Writing the ASM \"sbst_ams/atpg_patterns.S\"file ..."
+echo "Writing the ASM \"sbst_asm/atpg_patterns.S\" file ..."
