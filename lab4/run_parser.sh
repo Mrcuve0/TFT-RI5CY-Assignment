@@ -10,3 +10,5 @@ sbst_dir=${root_dir}/../riscv_testing/sbst_asm
 cd ${run_dir}
 
 ${root_dir}/stil_parser.py ${run_dir}/atpg_patterns.stil > ${sbst_dir}/atpg_patterns.S
+echo "Analyzing the \”run/atpg_patterns.stil\" file ..."
+echo "Writing the ASM \"sbst_ams/atpg_patterns.S\"file ..."

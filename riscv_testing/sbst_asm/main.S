@@ -48,7 +48,7 @@ _start:
 //	call main
 
 
-/************* YOUR ASSEMBLY CODE (BEGIN) ****************************/
+/************* YOUR ASSEMBLY CODE (BEGIN) ***************************
 //31.97% in 1359s only div for alu
 //36.50% in 2769s div+xor+add
 //39.17% in 3496s div+xor+add+sra
@@ -76,14 +76,18 @@ _start:
 #include "atpg_patterns_or.S"
 #include "atpg_patterns_and.S"
 
-//12.97% in 786s for alu_i
+*/
+
+// ADD+SUB 12.97% in 786s for alu_i (no swap, no self)
+// ADD+SUB 13.05% in 1361s for alu_i (swap + self) (constraints on VEC_MODE32)
 #include "atpg_patterns_add.S"
 #include "atpg_patterns_sub.S"
 
+/*
 //14.9% in 693s for alu_i
 #include "atpg_patterns_slt.S"
 #include "atpg_patterns_sltu.S"
-
+ */
 
 
 /************* YOUR ASSEMBLY CODE (END) *****************************/
