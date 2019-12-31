@@ -76,16 +76,15 @@ _start:
 
 // XOR+OR+AND 15.67% in 703s for alu_i (no swap, no self) (no constraints on VEC_MODE)
 // XOR+OR+AND 15.86% in 504s for alu_i (swap + self) (no constraints on VEC_MODE8 (11))
-#include "atpg_patterns_xor.S"
-#include "atpg_patterns_or.S"
-#include "atpg_patterns_and.S"
+// #include "atpg_patterns_xor.S"
+// #include "atpg_patterns_or.S"
+// #include "atpg_patterns_and.S"
 
 // ADD+SUB 12.97% in 786s for alu_i (no swap, no self) (no constraints on VEC_MODE)
 // ADD+SUB 13.05% in 1361s for alu_i (swap + self) (constraints on VEC_MODE32 (00))
 // ADD+SUB 13.01% in 532s for alu_i (swap + self) (constraints on VEC_MODE8 (11))
 // #include "atpg_patterns_add.S"
 // #include "atpg_patterns_sub.S"
-
 
 /*
 //14.9% in 693s for alu_i
