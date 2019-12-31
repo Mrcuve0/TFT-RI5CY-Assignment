@@ -12,6 +12,8 @@ TAGS
 *.map
 *.out
 *.json
+*.evcd
+*.evcd.fixed
 .build-rtl
 .lib-rtl
 .opt-rtl
