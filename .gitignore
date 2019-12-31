@@ -44,3 +44,4 @@ synopsys_cache_M-2016.12/DW01/DW01_NAND2/str/pdt2002_9337/element.ddc
 .config/*
 .cache/*
 .byobu/*
+riscv_testing_OLD/*
