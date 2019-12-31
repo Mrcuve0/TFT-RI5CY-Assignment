@@ -19,13 +19,41 @@ run_build_model riscv_alu_SHARED_INT_DIV0_FPU0
 # add_pi_constraints 0 operator_i[0]
 
 # SUB Opcode - b0011001
+# add_pi_constraints 0 operator_i[6]
+# add_pi_constraints 0 operator_i[5]
+# add_pi_constraints 1 operator_i[4]
+# add_pi_constraints 1 operator_i[3]
+# add_pi_constraints 0 operator_i[2]
+# add_pi_constraints 0 operator_i[1]
+# add_pi_constraints 1 operator_i[0]
+
+# XOR Opcode - b0101111
+# add_pi_constraints 0 operator_i[6]
+# add_pi_constraints 1 operator_i[5]
+# add_pi_constraints 0 operator_i[4]
+# add_pi_constraints 1 operator_i[3]
+# add_pi_constraints 1 operator_i[2]
+# add_pi_constraints 1 operator_i[1]
+# add_pi_constraints 1 operator_i[0]
+
+# OR Opcode - b0101110
+# add_pi_constraints 0 operator_i[6]
+# add_pi_constraints 1 operator_i[5]
+# add_pi_constraints 0 operator_i[4]
+# add_pi_constraints 1 operator_i[3]
+# add_pi_constraints 1 operator_i[2]
+# add_pi_constraints 1 operator_i[1]
+# add_pi_constraints 0 operator_i[0]
+
+# AND Opcode - b0010101
 add_pi_constraints 0 operator_i[6]
 add_pi_constraints 0 operator_i[5]
 add_pi_constraints 1 operator_i[4]
-add_pi_constraints 1 operator_i[3]
-add_pi_constraints 0 operator_i[2]
+add_pi_constraints 0 operator_i[3]
+add_pi_constraints 1 operator_i[2]
 add_pi_constraints 0 operator_i[1]
 add_pi_constraints 1 operator_i[0]
+
 
 # Disables vector mode --> VEC_MODE32 = 2'b00
 add_pi_constraints 1 vector_mode_i[0]
