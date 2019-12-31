@@ -67,11 +67,12 @@ _start:
 //27.86% in 860 for mul_unit 100
 #include "patterns_lfsr_mul_unit.S"
 
-//17.08% in 641s on alu_i
+*/
+
+// SRA+SRL 17.08% in 641s for alu_i
+// SRA+SRL 21.32% in 874s for alu_i (swap + self) (constraints on VEC_MODE8 (11))
 #include "atpg_patterns_sra.S"
 #include "atpg_patterns_srl.S"
-
-*/
 
 // XOR+OR+AND 15.67% in 703s for alu_i (no swap, no self) (no constraints on VEC_MODE)
 // XOR+OR+AND 15.86% in 504s for alu_i (swap + self) (no constraints on VEC_MODE8 (11))

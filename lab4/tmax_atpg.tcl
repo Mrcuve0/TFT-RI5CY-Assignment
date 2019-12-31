@@ -46,9 +46,27 @@ run_build_model riscv_alu_SHARED_INT_DIV0_FPU0
 # add_pi_constraints 0 operator_i[0]
 
 # AND Opcode - b0010101
+# add_pi_constraints 0 operator_i[6]
+# add_pi_constraints 0 operator_i[5]
+# add_pi_constraints 1 operator_i[4]
+# add_pi_constraints 0 operator_i[3]
+# add_pi_constraints 1 operator_i[2]
+# add_pi_constraints 0 operator_i[1]
+# add_pi_constraints 1 operator_i[0]
+
+# SRA Opcode - b0100100
+# add_pi_constraints 0 operator_i[6]
+# add_pi_constraints 1 operator_i[5]
+# add_pi_constraints 0 operator_i[4]
+# add_pi_constraints 0 operator_i[3]
+# add_pi_constraints 1 operator_i[2]
+# add_pi_constraints 0 operator_i[1]
+# add_pi_constraints 0 operator_i[0]
+
+# SRL Opcode - b0100101
 add_pi_constraints 0 operator_i[6]
-add_pi_constraints 0 operator_i[5]
-add_pi_constraints 1 operator_i[4]
+add_pi_constraints 1 operator_i[5]
+add_pi_constraints 0 operator_i[4]
 add_pi_constraints 0 operator_i[3]
 add_pi_constraints 1 operator_i[2]
 add_pi_constraints 0 operator_i[1]
