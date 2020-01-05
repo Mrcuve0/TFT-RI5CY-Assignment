@@ -95,18 +95,33 @@ with open(stil_filename) as stil_file:
 			instr = instr2operands[pi['operator_i']]
 			rs1 = hex(int(pi['operand_a_i'],2))
 			rs2 = hex(int(pi['operand_b_i'],2))
+			# print('li t0, {}'.format(rs1))
+			# print('li t1, {}'.format(rs2))
+			# print('{} t2, t0, t1'.format(instr))
+			# print('sw t2, 4(sp)')
+
+			# # Swap
+			# print('{} t2, t1, t0'.format(instr))
+			# print('sw t2, 4(sp)')
+
+			# # Self
+			# print('{} t2, t0, t0'.format(instr))
+			# print('sw t2, 4(sp)')
+			# print('{} t2, t1, t1'.format(instr))
+			# print('sw t2, 4(sp)')
+			# print('')
+
 			print('li t0, {}'.format(rs1))
 			print('li t1, {}'.format(rs2))
 			print('{} t2, t0, t1'.format(instr))
-			print('sw t2, 4(sp)')
-
 			# Swap
-			print('{} t2, t1, t0'.format(instr))
-			print('sw t2, 4(sp)')
-
+			print('{} t3, t1, t0'.format(instr))
 			# Self
-			print('{} t2, t0, t0'.format(instr))
+			print('{} t4, t0, t0'.format(instr))
+			print('{} t5, t1, t1'.format(instr))
+			# Store
 			print('sw t2, 4(sp)')
-			print('{} t2, t1, t1'.format(instr))
-			print('sw t2, 4(sp)')
+			print('sw t3, 8(sp)')
+			print('sw t4, 12(sp)')
+			print('sw t5, 16(sp)')
 			print('')
