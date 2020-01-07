@@ -18,9 +18,9 @@ set_faults -model transition -fault_coverage -atpg_effectiveness -summary verbos
 set_delay -launch system_clock
 
 ## Fault list (select one of the following)
-#read_faults ../initial_faults_exe.txt
+read_faults ../initial_faults_exe.txt
 #read_faults ../initial_faults_cpu.txt
-add_faults ex_stage_i/alu_i
+# add_faults ex_stage_i/alu_i
 #add_faults ex_stage_i/mult_i
 #add_faults ex_stage_i/clk_gate_regfile_waddr_lsu_reg
 #add_faults ex_stage_i/alu_i/int_div_div_i

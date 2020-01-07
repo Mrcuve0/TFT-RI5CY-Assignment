@@ -57,10 +57,10 @@ instr2operands = {
 	'0111111' : 'ext',
 
 	# Set Lower Than operations
-	'0000010' : 'slts',
-	'0000011' : 'sltu',
-	'0000110' : 'slets', 	# rd, rs1, rs2
-	'0000111' : 'sletu',	# rd, rs1, rs2
+	'0000010' : 'p.slts',
+	'0000011' : 'p.sltu',
+	'0000110' : 'p.slet', 	# rd, rs1, rs2
+	'0000111' : 'p.sletu',	# rd, rs1, rs2
 
 	# min/max
 	'0010000' : 'min',	# rd, rs1, rs2
