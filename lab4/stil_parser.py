@@ -7,19 +7,83 @@ stil_filename = sys.argv[1]
 signals_bits = [
 	('clk', 1),
 	('rst_n', 1),
-	('enable_i', 1),
-	('operator_i', 7),
-	('operand_a_i', 32),
-	('operand_b_i', 32),
-	('operand_c_i', 32),
-	('vector_mode_i', 2),
+	('alu_operator_i', 7),
+	('alu_operand_a_i', 32),
+	('alu_operand_b_i', 32),
+	('alu_operand_c_i', 32),
+	('alu_en_i', 1),
+	('alu_is_clpx_i', 1),
+	('alu_is_subrot_i', 1),
 	('bmask_a_i', 5),
 	('bmask_b_i', 5),
 	('imm_vec_ext_i', 2),
-	('is_clpx_i', 1),
-	('is_subrot_i', 1),
-	('clpx_shift_i', 2),
-	('ex_ready_i', 1)]
+	('alu_vec_mode_i', 2),
+	('alu_clpx_shift_i', 2),
+	('mult_operator_i', 3),
+	('mult_operand_a_i', 32),
+	('mult_operand_b_i', 32),
+	('mult_operand_c_i', 32),
+	('mult_en_i', 1), 
+	('mult_sel_subword_i', 1), 
+	('mult_signed_mode_i', 2), 
+	('mult_imm_i', 5),
+	('mult_dot_op_a_i', 32), 
+	('mult_dot_op_b_i', 32), 
+	('mult_dot_op_c_i', 32), 
+	('mult_dot_signed_i', 2),
+	('mult_is_clpx_i', 1),
+	('mult_clpx_shift_i', 2), 
+	('mult_clpx_img_i', 1), 
+	('mult_multicycle_o', 1),
+	('fpu_prec_i', 5),
+	('fpu_fflags_o', 5),
+	('fpu_fflags_we_o', 1),
+	('apu_en_i', 1),
+	('apu_op_i', 6), 
+	('apu_lat_i', 2),
+	('apu_operands_i', 96), 
+	('apu_waddr_i', 6), 
+	('apu_flags_i', 15), 
+	('apu_read_regs_i', 18),
+	('apu_read_regs_valid_i', 3), 
+	('apu_read_dep_o', 1), 
+	('apu_write_regs_i', 12),
+	('apu_write_regs_valid_i', 2), 
+	('apu_write_dep_o', 1), 
+	('apu_perf_type_o', 1),
+	('apu_perf_cont_o', 1), 
+	('apu_perf_wb_o', 1), 
+	('apu_busy_o', 1), 
+	('apu_ready_wb_o', 1),
+	('apu_master_req_o', 1),
+	('apu_master_ready_o', 1), 
+	('apu_master_gnt_i', 1),
+	('apu_master_operands_o', 96), 
+	('apu_master_op_o', 6),
+	('apu_master_valid_i', 1),
+	('apu_master_result_i', 32), 
+	('lsu_en_i', 1), 
+	('lsu_rdata_i', 32), 
+	('branch_in_ex_i', 1),
+	('regfile_alu_waddr_i', 6), 
+	('regfile_we_i', 1), 
+	('regfile_waddr_i', 6), 
+	('csr_access_i', 1),
+	('csr_rdata_i', 32),
+	('regfile_waddr_wb_o', 6), 
+	('regfile_we_wb_o', 1), 
+	('regfile_wdata_wb_o', 32),
+	('regfile_alu_waddr_fw_o', 6), 
+	('regfile_alu_we_fw_o', 1), 
+	('regfile_alu_wdata_fw_o', 32),
+	('jump_target_o', 32), 
+	('branch_decision_o', 1), 
+	('lsu_ready_ex_i', 1), 
+	('ex_ready_o', 1),
+	('ex_valid_o', 1), 
+	('wb_ready_i', 1), 
+	('lsu_err_i_BAR', 1), 
+	('regfile_alu_we_i', 1)]
 
 # Opcodes are listed in rtl/include/riscv_defines.sv
 
@@ -91,10 +155,10 @@ with open(stil_filename) as stil_file:
 		pi = {name:s.read(bits) for (name,bits) in signals_bits}
 		#print(pi)
 
-		if pi['operator_i'] in instr2operands.keys():
-			instr = instr2operands[pi['operator_i']]
-			rs1 = hex(int(pi['operand_a_i'],2))
-			rs2 = hex(int(pi['operand_b_i'],2))
+		if pi['alu_operator_i'] in instr2operands.keys():
+			instr = instr2operands[pi['alu_operator_i']]
+			rs1 = hex(int(pi['alu_operand_a_i'],2))
+			rs2 = hex(int(pi['alu_operand_b_i'],2))
 			# print('li t0, {}'.format(rs1))
 			# print('li t1, {}'.format(rs2))
 			# print('{} t2, t0, t1'.format(instr))
