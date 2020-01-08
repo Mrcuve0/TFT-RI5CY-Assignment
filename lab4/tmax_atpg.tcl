@@ -1,3 +1,5 @@
+set operation [getenv OPCODE]
+
 # Setup
 set_environment_viewer -instance_names
 set_messages -log tmax.log -replace
@@ -545,13 +547,18 @@ run_build_model riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHAR
 # add_pi_constraints 1 alu_operator_i[0]
 
 # ADD Opcode - b0011000
-add_pi_constraints 0 alu_operator_i[6]
-add_pi_constraints 0 alu_operator_i[5]
-add_pi_constraints 1 alu_operator_i[4]
-add_pi_constraints 1 alu_operator_i[3]
-add_pi_constraints 0 alu_operator_i[2]
-add_pi_constraints 0 alu_operator_i[1]
-add_pi_constraints 0 alu_operator_i[0]
+if {[string compare $operation "ADD"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 1 alu_operator_i[4]
+    add_pi_constraints 1 alu_operator_i[3]
+    add_pi_constraints 0 alu_operator_i[2]
+    add_pi_constraints 0 alu_operator_i[1]
+    add_pi_constraints 0 alu_operator_i[0]
+    set stilFileName "atpg_patterns_ADD.stil"
+    set faultFileName "atpg_faults_ADD.txt"
+}
+
 
 # SUB Opcode - b0011001
 # add_pi_constraints 0 alu_operator_i[6]
@@ -632,11 +639,11 @@ set_patterns -internal
 run_atpg -auto_compression
 
 ## Reports
-write_patterns atpg_patterns.stil -format stil -internal -replace
+write_patterns $stilFileName -format stil -internal -replace
 #set_faults -fault_coverage
 #report_faults -level {5 100} > report_faults_hierarchy.txt
 #report_faults -level {100 1} -verbose > report_faults_verbose.txt
 #report_summaries > report_summaries.txt
-write_faults atpg_faults.txt -replace -all
+write_faults $faultFileName -replace -all
 
 quit

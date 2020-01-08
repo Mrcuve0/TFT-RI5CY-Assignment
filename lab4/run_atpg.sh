@@ -8,5 +8,5 @@ run_dir=${root_dir}/../riscv_testing/run
 
 cd ${run_dir}
 
-tmax -shell ${root_dir}/tmax_atpg.tcl
+tmax -shell ${root_dir}/tmax_atpg.tcl -env OPCODE $1
 
