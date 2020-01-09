@@ -76,26 +76,26 @@ _start:
 // SRA+SRL 17.08% in 641s for alu_i
 // SRA+SRL 17.07% in 392s for alu_i (swap + self) (constraints on VEC_MODE8 (11))
 // SRA+SRL 19.78% in 286s for alu_i (swap + self + noStalls) (constraints on VEC_MODE8 (11))
-#include "atpg_patterns_sra.S"
-#include "atpg_patterns_srl.S"
+#include "atpg_patterns_SRA.S"
+#include "atpg_patterns_SRL.S"
 
 // XOR+OR+AND 15.67% in 703s for alu_i (no swap, no self) (no constraints on VEC_MODE)
 // XOR+OR+AND 15.86% in 504s for alu_i (swap + self) (constraints on VEC_MODE8 (11))
-#include "atpg_patterns_xor.S"
-#include "atpg_patterns_or.S"
-#include "atpg_patterns_and.S"
+#include "atpg_patterns_XOR.S"
+#include "atpg_patterns_OR.S"
+#include "atpg_patterns_AND.S"
 
 // ADD+SUB 12.97% in 786s for alu_i (no swap, no self) (no constraints on VEC_MODE)
 // ADD+SUB 13.05% in 1361s for alu_i (swap + self) (constraints on VEC_MODE32 (00))
 // ADD+SUB 13.01% in 532s for alu_i (swap + self) (constraints on VEC_MODE8 (11))
-#include "atpg_patterns_add.S"
-#include "atpg_patterns_sub.S"
+#include "atpg_patterns_ADD.S"
+#include "atpg_patterns_SUB.S"
 
 //14.9% in 693s for alu_i
 //#include "atpg_patterns_slts.S" 	<-- p.slts UNRECOGNIZED
-#include "atpg_patterns_sltu.S" 	<-- p.sltu RECOGNIZED
+#include "atpg_patterns_SLTU.S" 	<-- p.sltu RECOGNIZED
 //#include "atpg_patterns_slets.S" 	<-- p.slets UNRECOGNIZED
-#include "atpg_patterns_slet.S" 	<-- p.slet RECOGNIZED
+#include "atpg_patterns_SLET.S" 	<-- p.slet RECOGNIZED
 #include "atpg_patterns_sletu.S"	<-- p.sletu RECOGNIZED
 
 

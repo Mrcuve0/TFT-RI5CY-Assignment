@@ -502,49 +502,69 @@ run_build_model riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHAR
 # add_pi_constraints 1 alu_operator_i[0]
 
 # SRA Opcode - b0100100
-# add_pi_constraints 0 alu_operator_i[6]
-# add_pi_constraints 1 alu_operator_i[5]
-# add_pi_constraints 0 alu_operator_i[4]
-# add_pi_constraints 0 alu_operator_i[3]
-# add_pi_constraints 1 alu_operator_i[2]
-# add_pi_constraints 0 alu_operator_i[1]
-# add_pi_constraints 0 alu_operator_i[0]
+if {[string compare $operation "SRA"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 1 alu_operator_i[5]
+    add_pi_constraints 0 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 1 alu_operator_i[2]
+    add_pi_constraints 0 alu_operator_i[1]
+    add_pi_constraints 0 alu_operator_i[0]
+    set stilFileName "atpg_patterns_SRA.stil"
+    set faultFileName "atpg_faults_SRA.txt"
+}
 
 # SRL Opcode - b0100101
-# add_pi_constraints 0 alu_operator_i[6]
-# add_pi_constraints 1 alu_operator_i[5]
-# add_pi_constraints 0 alu_operator_i[4]
-# add_pi_constraints 0 alu_operator_i[3]
-# add_pi_constraints 1 alu_operator_i[2]
-# add_pi_constraints 0 alu_operator_i[1]
-# add_pi_constraints 1 alu_operator_i[0]
+if {[string compare $operation "SRL"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 1 alu_operator_i[5]
+    add_pi_constraints 0 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 1 alu_operator_i[2]
+    add_pi_constraints 0 alu_operator_i[1]
+    add_pi_constraints 1 alu_operator_i[0]
+    set stilFileName "atpg_patterns_SRL.stil"
+    set faultFileName "atpg_faults_SRL.txt"
+}
 
 # XOR Opcode - b0101111
-# add_pi_constraints 0 alu_operator_i[6]
-# add_pi_constraints 1 alu_operator_i[5]
-# add_pi_constraints 0 alu_operator_i[4]
-# add_pi_constraints 1 alu_operator_i[3]
-# add_pi_constraints 1 alu_operator_i[2]
-# add_pi_constraints 1 alu_operator_i[1]
-# add_pi_constraints 1 alu_operator_i[0]
+if {[string compare $operation "XOR"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 1 alu_operator_i[5]
+    add_pi_constraints 0 alu_operator_i[4]
+    add_pi_constraints 1 alu_operator_i[3]
+    add_pi_constraints 1 alu_operator_i[2]
+    add_pi_constraints 1 alu_operator_i[1]
+    add_pi_constraints 1 alu_operator_i[0]
+    set stilFileName "atpg_patterns_XOR.stil"
+    set faultFileName "atpg_faults_XOR.txt"
+}
 
 # OR Opcode - b0101110
-# add_pi_constraints 0 alu_operator_i[6]
-# add_pi_constraints 1 alu_operator_i[5]
-# add_pi_constraints 0 alu_operator_i[4]
-# add_pi_constraints 1 alu_operator_i[3]
-# add_pi_constraints 1 alu_operator_i[2]
-# add_pi_constraints 1 alu_operator_i[1]
-# add_pi_constraints 0 alu_operator_i[0]
+if {[string compare $operation "OR"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 1 alu_operator_i[5]
+    add_pi_constraints 0 alu_operator_i[4]
+    add_pi_constraints 1 alu_operator_i[3]
+    add_pi_constraints 1 alu_operator_i[2]
+    add_pi_constraints 1 alu_operator_i[1]
+    add_pi_constraints 0 alu_operator_i[0]
+    set stilFileName "atpg_patterns_OR.stil"
+    set faultFileName "atpg_faults_OR.txt"
+}
 
 # AND Opcode - b0010101
-# add_pi_constraints 0 alu_operator_i[6]
-# add_pi_constraints 0 alu_operator_i[5]
-# add_pi_constraints 1 alu_operator_i[4]
-# add_pi_constraints 0 alu_operator_i[3]
-# add_pi_constraints 1 alu_operator_i[2]
-# add_pi_constraints 0 alu_operator_i[1]
-# add_pi_constraints 1 alu_operator_i[0]
+if {[string compare $operation "AND"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 1 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 1 alu_operator_i[2]
+    add_pi_constraints 0 alu_operator_i[1]
+    add_pi_constraints 1 alu_operator_i[0]
+    set stilFileName "atpg_patterns_AND.stil"
+    set faultFileName "atpg_faults_AND.txt"
+}
 
 # ADD Opcode - b0011000
 if {[string compare $operation "ADD"] == 0} {
@@ -559,33 +579,44 @@ if {[string compare $operation "ADD"] == 0} {
     set faultFileName "atpg_faults_ADD.txt"
 }
 
-
 # SUB Opcode - b0011001
-# add_pi_constraints 0 alu_operator_i[6]
-# add_pi_constraints 0 alu_operator_i[5]
-# add_pi_constraints 1 alu_operator_i[4]
-# add_pi_constraints 1 alu_operator_i[3]
-# add_pi_constraints 0 alu_operator_i[2]
-# add_pi_constraints 0 alu_operator_i[1]
-# add_pi_constraints 1 alu_operator_i[0]
+if {[string compare $operation "SUB"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 1 alu_operator_i[4]
+    add_pi_constraints 1 alu_operator_i[3]
+    add_pi_constraints 0 alu_operator_i[2]
+    add_pi_constraints 0 alu_operator_i[1]
+    add_pi_constraints 1 alu_operator_i[0]
+    set stilFileName "atpg_patterns_SUB.stil"
+    set faultFileName "atpg_faults_SUB.txt"
+}
 
 # SLTU Opcode - b0000011
-# add_pi_constraints 0 alu_operator_i[6]
-# add_pi_constraints 0 alu_operator_i[5]
-# add_pi_constraints 0 alu_operator_i[4]
-# add_pi_constraints 0 alu_operator_i[3]
-# add_pi_constraints 0 alu_operator_i[2]
-# add_pi_constraints 1 alu_operator_i[1]
-# add_pi_constraints 1 alu_operator_i[0]
+if {[string compare $operation "SLTU"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 0 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 0 alu_operator_i[2]
+    add_pi_constraints 1 alu_operator_i[1]
+    add_pi_constraints 1 alu_operator_i[0]
+    set stilFileName "atpg_patterns_SLTU.stil"
+    set faultFileName "atpg_faults_SLTU.txt"
+}
 
-# SLETS Opcode - b0000110 UNRECOGNIZED | SLET
-# add_pi_constraints 0 alu_operator_i[6]
-# add_pi_constraints 0 alu_operator_i[5]
-# add_pi_constraints 0 alu_operator_i[4]
-# add_pi_constraints 0 alu_operator_i[3]
-# add_pi_constraints 1 alu_operator_i[2]
-# add_pi_constraints 1 alu_operator_i[1]
-# add_pi_constraints 0 alu_operator_i[0]
+# SLET Opcode - b0000110
+if {[string compare $operation "SLET"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 0 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 1 alu_operator_i[2]
+    add_pi_constraints 1 alu_operator_i[1]
+    add_pi_constraints 0 alu_operator_i[0]
+    set stilFileName "atpg_patterns_SLET.stil"
+    set faultFileName "atpg_faults_SLET.txt"
+}
 
 # SLETU Opcode - b0000111 -- p.sletu RECOGNIZED
 # add_pi_constraints 0 alu_operator_i[6]
