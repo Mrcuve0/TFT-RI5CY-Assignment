@@ -527,6 +527,32 @@ if {[string compare $operation "SRL"] == 0} {
     set faultFileName "atpg_faults_SRL.txt"
 }
 
+# ROR Opcode - b0100110
+if {[string compare $operation "ROR"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 1 alu_operator_i[5]
+    add_pi_constraints 0 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 1 alu_operator_i[2]
+    add_pi_constraints 1 alu_operator_i[1]
+    add_pi_constraints 0 alu_operator_i[0]
+    set stilFileName "atpg_patterns_ROR.stil"
+    set faultFileName "atpg_faults_ROR.txt"
+}
+
+# SLL Opcode - b0100111
+if {[string compare $operation "SLL"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 1 alu_operator_i[5]
+    add_pi_constraints 0 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 1 alu_operator_i[2]
+    add_pi_constraints 1 alu_operator_i[1]
+    add_pi_constraints 1 alu_operator_i[0]
+    set stilFileName "atpg_patterns_SLL.stil"
+    set faultFileName "atpg_faults_SLL.txt"
+}
+
 # XOR Opcode - b0101111
 if {[string compare $operation "XOR"] == 0} {
     add_pi_constraints 0 alu_operator_i[6]
@@ -592,18 +618,44 @@ if {[string compare $operation "SUB"] == 0} {
     set faultFileName "atpg_faults_SUB.txt"
 }
 
-# SLTU Opcode - b0000011
-if {[string compare $operation "SLTU"] == 0} {
+# ADDU Opcode - b0011010
+if {[string compare $operation "ADDU"] == 0} {
     add_pi_constraints 0 alu_operator_i[6]
     add_pi_constraints 0 alu_operator_i[5]
-    add_pi_constraints 0 alu_operator_i[4]
-    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 1 alu_operator_i[4]
+    add_pi_constraints 1 alu_operator_i[3]
+    add_pi_constraints 0 alu_operator_i[2]
+    add_pi_constraints 1 alu_operator_i[1]
+    add_pi_constraints 0 alu_operator_i[0]
+    set stilFileName "atpg_patterns_ADDU.stil"
+    set faultFileName "atpg_faults_ADDU.txt"
+}
+
+# SUBU Opcode - b0011011
+if {[string compare $operation "SUBU"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 1 alu_operator_i[4]
+    add_pi_constraints 1 alu_operator_i[3]
     add_pi_constraints 0 alu_operator_i[2]
     add_pi_constraints 1 alu_operator_i[1]
     add_pi_constraints 1 alu_operator_i[0]
-    set stilFileName "atpg_patterns_SLTU.stil"
-    set faultFileName "atpg_faults_SLTU.txt"
+    set stilFileName "atpg_patterns_SUBU.stil"
+    set faultFileName "atpg_faults_SUBU.txt"
 }
+
+# SLTU Opcode - b0000011 -- NOT in RISCY
+# if {[string compare $operation "SLTU"] == 0} {
+#     add_pi_constraints 0 alu_operator_i[6]
+#     add_pi_constraints 0 alu_operator_i[5]
+#     add_pi_constraints 0 alu_operator_i[4]
+#     add_pi_constraints 0 alu_operator_i[3]
+#     add_pi_constraints 0 alu_operator_i[2]
+#     add_pi_constraints 1 alu_operator_i[1]
+#     add_pi_constraints 1 alu_operator_i[0]
+#     set stilFileName "atpg_patterns_SLTU.stil"
+#     set faultFileName "atpg_faults_SLTU.txt"
+# }
 
 # SLET Opcode - b0000110
 if {[string compare $operation "SLET"] == 0} {
@@ -619,13 +671,95 @@ if {[string compare $operation "SLET"] == 0} {
 }
 
 # SLETU Opcode - b0000111 -- p.sletu RECOGNIZED
-# add_pi_constraints 0 alu_operator_i[6]
-# add_pi_constraints 0 alu_operator_i[5]
-# add_pi_constraints 0 alu_operator_i[4]
-# add_pi_constraints 0 alu_operator_i[3]
-# add_pi_constraints 1 alu_operator_i[2]
-# add_pi_constraints 1 alu_operator_i[1]
-# add_pi_constraints 1 alu_operator_i[0]
+if {[string compare $operation "SLETU"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 0 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 1 alu_operator_i[2]
+    add_pi_constraints 1 alu_operator_i[1]
+    add_pi_constraints 1 alu_operator_i[0]
+    set stilFileName "atpg_patterns_SLETU.stil"
+    set faultFileName "atpg_faults_SLETU.txt"
+}
+
+# CLIP Opcode - b0010110
+if {[string compare $operation "CLIP"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 1 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 1 alu_operator_i[2]
+    add_pi_constraints 1 alu_operator_i[1]
+    add_pi_constraints 0 alu_operator_i[0]
+    set stilFileName "atpg_patterns_CLIP.stil"
+    set faultFileName "atpg_faults_CLIP.txt"
+}
+
+# CLIPU Opcode - b0010111
+if {[string compare $operation "CLIPU"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 1 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 1 alu_operator_i[2]
+    add_pi_constraints 1 alu_operator_i[1]
+    add_pi_constraints 1 alu_operator_i[0]
+    set stilFileName "atpg_patterns_CLIPU.stil"
+    set faultFileName "atpg_faults_CLIPU.txt"
+}
+
+# MIN Opcode - b0010000
+if {[string compare $operation "MIN"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 1 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 0 alu_operator_i[2]
+    add_pi_constraints 0 alu_operator_i[1]
+    add_pi_constraints 0 alu_operator_i[0]
+    set stilFileName "atpg_patterns_MIN.stil"
+    set faultFileName "atpg_faults_MIN.txt"
+}
+
+# MINU Opcode - b0010001
+if {[string compare $operation "MINU"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 1 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 0 alu_operator_i[2]
+    add_pi_constraints 0 alu_operator_i[1]
+    add_pi_constraints 1 alu_operator_i[0]
+    set stilFileName "atpg_patterns_MINU.stil"
+    set faultFileName "atpg_faults_MINU.txt"
+}
+
+# MAX Opcode - b0010010
+if {[string compare $operation "MAX"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 1 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 0 alu_operator_i[2]
+    add_pi_constraints 1 alu_operator_i[1]
+    add_pi_constraints 0 alu_operator_i[0]
+    set stilFileName "atpg_patterns_MAX.stil"
+    set faultFileName "atpg_faults_MAX.txt"
+}
+
+# MAXU Opcode - b0010011
+if {[string compare $operation "MAXU"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 1 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 0 alu_operator_i[2]
+    add_pi_constraints 1 alu_operator_i[1]
+    add_pi_constraints 1 alu_operator_i[0]
+    set stilFileName "atpg_patterns_MAXU.stil"
+    set faultFileName "atpg_faults_MAXU.txt"
+}
 
 
 ### ------ IGNORE FOR NOW ------ ###
