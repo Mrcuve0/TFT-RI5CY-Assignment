@@ -94,8 +94,8 @@ instr2operands = {
 	# Basic OPs
 	'0011000' : 'add',	# rd, rs1, rs2
 	'0011001' : 'sub',	# rd, rs1, rs2
-	'0011010' : 'addu',
-	'0011011' : 'subu',
+	'0011010' : 'addu',	# rd, rs1, rs2
+	'0011011' : 'subu',	# rd, rs1, rs2
 	'0011100' : 'addr',
 	'0011101' : 'subr',
 	'0011110' : 'addur',
@@ -105,10 +105,10 @@ instr2operands = {
 	'0010101' : 'and',
 
 	# Shifts
-	'0100100' : 'sra',
-	'0100101' : 'srl',
+	'0100100' : 'sra',  # rd, rs1, rs2
+	'0100101' : 'srl',  # rd, rs1, rs2
 	'0100110' : 'ror',	# rd, rs1, rs2
-	'0100111' : 'sll',
+	'0100111' : 'sll',  # rd, rs1, rs2
 
 	# Bit counting
 	'0110110' : 'ff1', 	# rd, rs1
@@ -125,6 +125,11 @@ instr2operands = {
 	'0000011' : 'p.sltu',
 	'0000110' : 'p.slet', 	# rd, rs1, rs2
 	'0000111' : 'p.sletu',	# rd, rs1, rs2
+
+	# Absolute value
+	'0010100' : 'abs',
+	'0010110' : 'clip',		# rd, rs1, rs2
+    '0010111' : 'clipu',	# rd, rs1, rs2
 
 	# min/max
 	'0010000' : 'min',	# rd, rs1, rs2

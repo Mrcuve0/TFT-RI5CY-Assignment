@@ -3,7 +3,7 @@
 import os
 import subprocess
 
-opcodesList = ['SRA', 'SRL', 'XOR', 'OR', 'AND', 'ADD', 'SUB', 'SLTU', 'SLET']
+opcodesList = ['SRA', 'SRL', 'ROR', 'SLL', 'XOR', 'OR', 'AND', 'ADD', 'SUB', 'ADDU', 'SUBU', 'SLET', 'SLETU', 'CLIP', 'CLIPU', 'MIN', 'MINU', 'MAX', 'MAXU']
 
 def main():
     currPath = os.getcwd()
