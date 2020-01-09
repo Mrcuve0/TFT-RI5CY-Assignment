@@ -81,24 +81,24 @@ parameter REGC_ZERO = 2'b11;
 
 parameter ALU_OP_WIDTH = 7;
 
-parameter ALU_ADD   = 7'b0011000;
-parameter ALU_SUB   = 7'b0011001;
-parameter ALU_ADDU  = 7'b0011010;
-parameter ALU_SUBU  = 7'b0011011;
+parameter ALU_ADD   = 7'b0011000; // ATPG
+parameter ALU_SUB   = 7'b0011001; // ATPG
+parameter ALU_ADDU  = 7'b0011010; // ATPG
+parameter ALU_SUBU  = 7'b0011011; // ATPG
 parameter ALU_ADDR  = 7'b0011100;
 parameter ALU_SUBR  = 7'b0011101;
 parameter ALU_ADDUR = 7'b0011110;
 parameter ALU_SUBUR = 7'b0011111;
 
-parameter ALU_XOR   = 7'b0101111;
-parameter ALU_OR    = 7'b0101110;
-parameter ALU_AND   = 7'b0010101;
+parameter ALU_XOR   = 7'b0101111; // ATPG
+parameter ALU_OR    = 7'b0101110; // ATPG
+parameter ALU_AND   = 7'b0010101; // ATPG
 
 // Shifts
-parameter ALU_SRA   = 7'b0100100;
-parameter ALU_SRL   = 7'b0100101;
-parameter ALU_ROR   = 7'b0100110;
-parameter ALU_SLL   = 7'b0100111;
+parameter ALU_SRA   = 7'b0100100; // ATPG
+parameter ALU_SRL   = 7'b0100101; // ATPG
+parameter ALU_ROR   = 7'b0100110; // ATPG
+parameter ALU_SLL   = 7'b0100111; // ATPG
 
 // bit manipulation
 parameter ALU_BEXT  = 7'b0101000;
@@ -131,24 +131,24 @@ parameter ALU_EQ    = 7'b0001100;
 parameter ALU_NE    = 7'b0001101;
 
 // Set Lower Than operations
-parameter ALU_SLTS  = 7'b0000010;
-parameter ALU_SLTU  = 7'b0000011;
-parameter ALU_SLETS = 7'b0000110;
-parameter ALU_SLETU = 7'b0000111;
+parameter ALU_SLTS  = 7'b0000010; // Not in RISCY
+parameter ALU_SLTU  = 7'b0000011; // Not in RISCY
+parameter ALU_SLETS = 7'b0000110; // (SLET) ATPG
+parameter ALU_SLETU = 7'b0000111; // ATPG
 
 // Absolute value
 parameter ALU_ABS   = 7'b0010100;
-parameter ALU_CLIP  = 7'b0010110;
-parameter ALU_CLIPU = 7'b0010111;
+parameter ALU_CLIP  = 7'b0010110; // ATPG
+parameter ALU_CLIPU = 7'b0010111; // ATPG
 
 // Insert/extract
-parameter ALU_INS   = 7'b0101101;
+parameter ALU_INS   = 7'b0101101; // called "insert" in RISCY
 
 // min/max
-parameter ALU_MIN   = 7'b0010000;
-parameter ALU_MINU  = 7'b0010001;
-parameter ALU_MAX   = 7'b0010010;
-parameter ALU_MAXU  = 7'b0010011;
+parameter ALU_MIN   = 7'b0010000; // ATPG
+parameter ALU_MINU  = 7'b0010001; // ATPG
+parameter ALU_MAX   = 7'b0010010; // ATPG
+parameter ALU_MAXU  = 7'b0010011; // ATPG
 
 // div/rem
 parameter ALU_DIVU  = 7'b0110000; // bit 0 is used for signed mode, bit 1 is used for remdiv

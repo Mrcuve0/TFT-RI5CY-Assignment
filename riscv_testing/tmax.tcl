@@ -6,6 +6,7 @@ set_messages -log tmax.log -replace
 read_netlist ../gate/NangateOpenCellLibrary.tlib -library
 read_netlist ../gate/riscv_core.v
 run_build_model riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800
+
 add_clocks 1 clk_i
 run_drc
 
@@ -18,7 +19,7 @@ set_faults -model transition -fault_coverage -atpg_effectiveness -summary verbos
 set_delay -launch system_clock
 
 ## Fault list (select one of the following)
-read_faults ../initial_faults_exe.txt
+read_faults ../initial_faults_exe_FSIM.txt
 #read_faults ../initial_faults_cpu.txt
 # add_faults ex_stage_i/alu_i
 #add_faults ex_stage_i/mult_i

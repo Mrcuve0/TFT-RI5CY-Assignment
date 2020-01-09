@@ -92,11 +92,11 @@ _start:
 #include "atpg_patterns_SUB.S"
 
 //14.9% in 693s for alu_i
-//#include "atpg_patterns_slts.S" 	<-- p.slts UNRECOGNIZED
-#include "atpg_patterns_SLTU.S" 	<-- p.sltu RECOGNIZED
-//#include "atpg_patterns_slets.S" 	<-- p.slets UNRECOGNIZED
-#include "atpg_patterns_SLET.S" 	<-- p.slet RECOGNIZED
-#include "atpg_patterns_sletu.S"	<-- p.sletu RECOGNIZED
+//#include "atpg_patterns_slts.S" 	<-- NOT in RISCY
+//#include "atpg_patterns_SLTU.S" 	<-- NOT in RISCY
+//#include "atpg_patterns_slets.S" 	<-- NOT in RISCY
+#include "atpg_patterns_SLET.S" 	<-- p.slet in RISCY
+#include "atpg_patterns_SLETU.S"	<-- p.sletu in RISCY
 
 
 /************* YOUR ASSEMBLY CODE (END) *****************************/

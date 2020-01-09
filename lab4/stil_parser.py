@@ -100,9 +100,9 @@ instr2operands = {
 	'0011101' : 'subr',
 	'0011110' : 'addur',
 	'0011111' : 'subur',
-	'0101111' : 'xor',
-	'0101110' : 'or',
-	'0010101' : 'and',
+	'0101111' : 'xor',	# rd, rs1, rs2
+	'0101110' : 'or',	# rd, rs1, rs2
+	'0010101' : 'and',	# rd, rs1, rs2
 
 	# Shifts
 	'0100100' : 'sra',  # rd, rs1, rs2
