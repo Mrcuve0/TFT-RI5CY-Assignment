@@ -8,6 +8,7 @@ set_messages -log tmax.log -replace
 read_netlist ../gate/NangateOpenCellLibrary.tlib -library
 read_netlist ../gate/riscv_core.v
 run_build_model riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5
+
 #un_build_model riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800
 
 ## DRC
