@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 
-import re, sys, io
+import re, sys, io, random
 
 stil_filename = sys.argv[1]
+
+ls3_Ops = ['p.adduN', 'p.subuN']
+ls2_Ops = ['p.clip', 'p.clipu']
 
 signals_bits = [
 	('clk', 1),
@@ -94,8 +97,8 @@ instr2operands = {
 	# Basic OPs
 	'0011000' : 'add',	# rd, rs1, rs2
 	'0011001' : 'sub',	# rd, rs1, rs2
-	'0011010' : 'addu',	# rd, rs1, rs2
-	'0011011' : 'subu',	# rd, rs1, rs2
+	'0011010' : 'p.adduN',	# rD, rs1, rs2, ls3
+	'0011011' : 'p.subuN',	# rD, rs1, rs2, ls3
 	'0011100' : 'addr',
 	'0011101' : 'subr',
 	'0011110' : 'addur',
@@ -107,7 +110,7 @@ instr2operands = {
 	# Shifts
 	'0100100' : 'sra',  # rd, rs1, rs2
 	'0100101' : 'srl',  # rd, rs1, rs2
-	'0100110' : 'ror',	# rd, rs1, rs2
+	'0100110' : 'p.ror',	# rd, rs1, rs2
 	'0100111' : 'sll',  # rd, rs1, rs2
 
 	# Bit counting
@@ -128,14 +131,14 @@ instr2operands = {
 
 	# Absolute value
 	'0010100' : 'abs',
-	'0010110' : 'clip',		# rd, rs1, rs2
-    '0010111' : 'clipu',	# rd, rs1, rs2
+	'0010110' : 'p.clip',		# rd, rs1, ls2
+    '0010111' : 'p.clipu',		# rd, rs1, ls2
 
 	# min/max
-	'0010000' : 'min',	# rd, rs1, rs2
-	'0010001' : 'minu',	# rd, rs1, rs2
-	'0010010' : 'max',	# rd, rs1, rs2
-	'0010011' : 'maxu',	# rd, rs1, rs2
+	'0010000' : 'p.min',	# rd, rs1, rs2
+	'0010001' : 'p.minu',	# rd, rs1, rs2
+	'0010010' : 'p.max',	# rd, rs1, rs2
+	'0010011' : 'p.maxu',	# rd, rs1, rs2
 
 	# Div/Rem
 	'0110000' : 'divu', 
@@ -165,20 +168,44 @@ with open(stil_filename) as stil_file:
 			instr = instr2operands[pi['alu_operator_i']]
 			rs1 = hex(int(pi['alu_operand_a_i'],2))
 			rs2 = hex(int(pi['alu_operand_b_i'],2))
-
 			print('li t0, {}'.format(rs1))
 			print('li t1, {}'.format(rs2))
-			print('{} t2, t0, t1'.format(instr))
+
+			if (instr in ls3_Ops):
+				# ls3 = hex(int(pi['alu_operand_c_i'],2))
+				# print('li t6, {}'.format(ls3))
+				# print('{} t2, t0, t1, t6'.format(instr))
+				print('{} t2, t0, t1, {}'.format(instr, hex(random.randint(0, 31))))
+			elif (instr in ls2_Ops):
+				# ls2 = hex(int(pi['alu_operand_c_i'],2))
+				# print('li t6, {}'.format(ls2))
+				# print('{} t2, t0, t1, t6'.format(instr))
+				print('{} t2, t0, {}'.format(instr, hex(random.randint(0, 31))))
+			else:
+				print('{} t2, t0, t1'.format(instr))
+
 			index = index + 1 
 		
 		elif (pi['alu_operator_i'] in instr2operands.keys() and index%2 == 1):
 			instr = instr2operands[pi['alu_operator_i']]
 			rs1 = hex(int(pi['alu_operand_a_i'],2))
 			rs2 = hex(int(pi['alu_operand_b_i'],2))
-
 			print('li t3, {}'.format(rs1))
 			print('li t4, {}'.format(rs2))
-			print('{} t5, t3, t4'.format(instr))
+
+			if (instr in ls3_Ops):
+				# ls3 = hex(int(pi['alu_operand_c_i'],2))
+				# print('li t7, {}'.format(ls3))
+				# print('{} t5, t3, t4, t7'.format(instr))
+				print('{} t5, t3, t4, {}'.format(instr, hex(random.randint(0, 31))))
+			elif (instr in ls2_Ops):
+				# ls2 = hex(int(pi['alu_operand_c_i'],2))
+				# print('li t6, {}'.format(ls2))
+				# print('{} t2, t0, t1, t6'.format(instr))
+				print('{} t5, t3, {}'.format(instr, hex(random.randint(0, 31))))
+			else:
+				print('{} t5, t3, t4'.format(instr))
+
 			print('sw t2, 4(sp)')
 			print('sw t5, 8(sp)')
 			print('')
