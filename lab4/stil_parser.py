@@ -146,7 +146,14 @@ instr2operands = {
 	'0110010' : 'remu',
 	'0110011' : 'rem',
 
-	# add others..
+	# MUL_
+	'000' : 'mac32',
+	'001' : 'msu32',
+	'010' : 'i',
+	'011' : 'ir',
+	'100' : 'dot8',
+	'101' : 'dot16',
+    '110' : 'h'
 }
 
 with open(stil_filename) as stil_file:

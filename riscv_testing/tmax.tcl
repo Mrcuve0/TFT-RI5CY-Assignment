@@ -5,6 +5,8 @@ set_messages -log tmax.log -replace
 ## Build and DRC
 read_netlist ../gate/NangateOpenCellLibrary.tlib -library
 read_netlist ../gate/riscv_core.v
+
+# Processor
 run_build_model riscv_core_0_128_1_16_1_1_0_0_0_0_0_0_0_0_0_3_6_15_5_1a110800
 
 add_clocks 1 clk_i
