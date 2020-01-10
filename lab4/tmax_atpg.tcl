@@ -510,6 +510,9 @@ if {[string compare $operation "SRA"] == 0} {
     add_pi_constraints 1 alu_operator_i[2]
     add_pi_constraints 0 alu_operator_i[1]
     add_pi_constraints 0 alu_operator_i[0]
+    # Vector Mode ON
+    add_pi_constraints 1 alu_vec_mode_i[0]
+    add_pi_constraints 1 alu_vec_mode_i[1]
     set stilFileName "atpg_patterns_SRA.stil"
     set faultFileName "atpg_faults_SRA.txt"
 }
@@ -523,6 +526,9 @@ if {[string compare $operation "SRL"] == 0} {
     add_pi_constraints 1 alu_operator_i[2]
     add_pi_constraints 0 alu_operator_i[1]
     add_pi_constraints 1 alu_operator_i[0]
+    # Vector Mode ON
+    add_pi_constraints 1 alu_vec_mode_i[0]
+    add_pi_constraints 1 alu_vec_mode_i[1]
     set stilFileName "atpg_patterns_SRL.stil"
     set faultFileName "atpg_faults_SRL.txt"
 }
@@ -536,6 +542,9 @@ if {[string compare $operation "ROR"] == 0} {
     add_pi_constraints 1 alu_operator_i[2]
     add_pi_constraints 1 alu_operator_i[1]
     add_pi_constraints 0 alu_operator_i[0]
+    # Vector Mode OFF
+    add_pi_constraints 0 alu_vec_mode_i[0]
+    add_pi_constraints 0 alu_vec_mode_i[1]
     set stilFileName "atpg_patterns_ROR.stil"
     set faultFileName "atpg_faults_ROR.txt"
 }
@@ -549,6 +558,9 @@ if {[string compare $operation "SLL"] == 0} {
     add_pi_constraints 1 alu_operator_i[2]
     add_pi_constraints 1 alu_operator_i[1]
     add_pi_constraints 1 alu_operator_i[0]
+    # Vector Mode ON
+    add_pi_constraints 1 alu_vec_mode_i[0]
+    add_pi_constraints 1 alu_vec_mode_i[1]
     set stilFileName "atpg_patterns_SLL.stil"
     set faultFileName "atpg_faults_SLL.txt"
 }
@@ -562,6 +574,9 @@ if {[string compare $operation "XOR"] == 0} {
     add_pi_constraints 1 alu_operator_i[2]
     add_pi_constraints 1 alu_operator_i[1]
     add_pi_constraints 1 alu_operator_i[0]
+    # Vector Mode ON
+    add_pi_constraints 1 alu_vec_mode_i[0]
+    add_pi_constraints 1 alu_vec_mode_i[1]
     set stilFileName "atpg_patterns_XOR.stil"
     set faultFileName "atpg_faults_XOR.txt"
 }
@@ -575,6 +590,9 @@ if {[string compare $operation "OR"] == 0} {
     add_pi_constraints 1 alu_operator_i[2]
     add_pi_constraints 1 alu_operator_i[1]
     add_pi_constraints 0 alu_operator_i[0]
+    # Vector Mode ON
+    add_pi_constraints 1 alu_vec_mode_i[0]
+    add_pi_constraints 1 alu_vec_mode_i[1]
     set stilFileName "atpg_patterns_OR.stil"
     set faultFileName "atpg_faults_OR.txt"
 }
@@ -588,6 +606,9 @@ if {[string compare $operation "AND"] == 0} {
     add_pi_constraints 1 alu_operator_i[2]
     add_pi_constraints 0 alu_operator_i[1]
     add_pi_constraints 1 alu_operator_i[0]
+    # Vector Mode ON
+    add_pi_constraints 1 alu_vec_mode_i[0]
+    add_pi_constraints 1 alu_vec_mode_i[1]
     set stilFileName "atpg_patterns_AND.stil"
     set faultFileName "atpg_faults_AND.txt"
 }
@@ -601,6 +622,9 @@ if {[string compare $operation "ADD"] == 0} {
     add_pi_constraints 0 alu_operator_i[2]
     add_pi_constraints 0 alu_operator_i[1]
     add_pi_constraints 0 alu_operator_i[0]
+    # Vector Mode ON
+    add_pi_constraints 1 alu_vec_mode_i[0]
+    add_pi_constraints 1 alu_vec_mode_i[1]
     set stilFileName "atpg_patterns_ADD.stil"
     set faultFileName "atpg_faults_ADD.txt"
 }
@@ -614,12 +638,15 @@ if {[string compare $operation "SUB"] == 0} {
     add_pi_constraints 0 alu_operator_i[2]
     add_pi_constraints 0 alu_operator_i[1]
     add_pi_constraints 1 alu_operator_i[0]
+    # Vector Mode ON
+    add_pi_constraints 1 alu_vec_mode_i[0]
+    add_pi_constraints 1 alu_vec_mode_i[1]
     set stilFileName "atpg_patterns_SUB.stil"
     set faultFileName "atpg_faults_SUB.txt"
 }
 
-# ADDU Opcode - b0011010
-if {[string compare $operation "ADDU"] == 0} {
+# ADDUN Opcode - b0011010
+if {[string compare $operation "ADDUN"] == 0} {
     add_pi_constraints 0 alu_operator_i[6]
     add_pi_constraints 0 alu_operator_i[5]
     add_pi_constraints 1 alu_operator_i[4]
@@ -627,12 +654,15 @@ if {[string compare $operation "ADDU"] == 0} {
     add_pi_constraints 0 alu_operator_i[2]
     add_pi_constraints 1 alu_operator_i[1]
     add_pi_constraints 0 alu_operator_i[0]
-    set stilFileName "atpg_patterns_ADDU.stil"
-    set faultFileName "atpg_faults_ADDU.txt"
+    # Vector Mode OFF
+    add_pi_constraints 0 alu_vec_mode_i[0]
+    add_pi_constraints 0 alu_vec_mode_i[1]
+    set stilFileName "atpg_patterns_ADDUN.stil"
+    set faultFileName "atpg_faults_ADDUN.txt"
 }
 
-# SUBU Opcode - b0011011
-if {[string compare $operation "SUBU"] == 0} {
+# SUBUN Opcode - b0011011
+if {[string compare $operation "SUBUN"] == 0} {
     add_pi_constraints 0 alu_operator_i[6]
     add_pi_constraints 0 alu_operator_i[5]
     add_pi_constraints 1 alu_operator_i[4]
@@ -640,8 +670,11 @@ if {[string compare $operation "SUBU"] == 0} {
     add_pi_constraints 0 alu_operator_i[2]
     add_pi_constraints 1 alu_operator_i[1]
     add_pi_constraints 1 alu_operator_i[0]
-    set stilFileName "atpg_patterns_SUBU.stil"
-    set faultFileName "atpg_faults_SUBU.txt"
+    # Vector Mode OFF
+    add_pi_constraints 0 alu_vec_mode_i[0]
+    add_pi_constraints 0 alu_vec_mode_i[1]
+    set stilFileName "atpg_patterns_SUBUN.stil"
+    set faultFileName "atpg_faults_SUBUN.txt"
 }
 
 # SLTU Opcode - b0000011 -- NOT in RISCY
@@ -666,6 +699,9 @@ if {[string compare $operation "SLET"] == 0} {
     add_pi_constraints 1 alu_operator_i[2]
     add_pi_constraints 1 alu_operator_i[1]
     add_pi_constraints 0 alu_operator_i[0]
+    # Vector Mode OFF
+    add_pi_constraints 0 alu_vec_mode_i[0]
+    add_pi_constraints 0 alu_vec_mode_i[1]
     set stilFileName "atpg_patterns_SLET.stil"
     set faultFileName "atpg_faults_SLET.txt"
 }
@@ -679,6 +715,9 @@ if {[string compare $operation "SLETU"] == 0} {
     add_pi_constraints 1 alu_operator_i[2]
     add_pi_constraints 1 alu_operator_i[1]
     add_pi_constraints 1 alu_operator_i[0]
+    # Vector Mode OFF
+    add_pi_constraints 0 alu_vec_mode_i[0]
+    add_pi_constraints 0 alu_vec_mode_i[1]
     set stilFileName "atpg_patterns_SLETU.stil"
     set faultFileName "atpg_faults_SLETU.txt"
 }
@@ -692,6 +731,9 @@ if {[string compare $operation "CLIP"] == 0} {
     add_pi_constraints 1 alu_operator_i[2]
     add_pi_constraints 1 alu_operator_i[1]
     add_pi_constraints 0 alu_operator_i[0]
+    # Vector Mode OFF
+    add_pi_constraints 0 alu_vec_mode_i[0]
+    add_pi_constraints 0 alu_vec_mode_i[1]
     set stilFileName "atpg_patterns_CLIP.stil"
     set faultFileName "atpg_faults_CLIP.txt"
 }
@@ -705,6 +747,9 @@ if {[string compare $operation "CLIPU"] == 0} {
     add_pi_constraints 1 alu_operator_i[2]
     add_pi_constraints 1 alu_operator_i[1]
     add_pi_constraints 1 alu_operator_i[0]
+    # Vector Mode OFF
+    add_pi_constraints 0 alu_vec_mode_i[0]
+    add_pi_constraints 0 alu_vec_mode_i[1]
     set stilFileName "atpg_patterns_CLIPU.stil"
     set faultFileName "atpg_faults_CLIPU.txt"
 }
@@ -718,6 +763,9 @@ if {[string compare $operation "MIN"] == 0} {
     add_pi_constraints 0 alu_operator_i[2]
     add_pi_constraints 0 alu_operator_i[1]
     add_pi_constraints 0 alu_operator_i[0]
+    # Vector Mode ON
+    add_pi_constraints 1 alu_vec_mode_i[0]
+    add_pi_constraints 1 alu_vec_mode_i[1]
     set stilFileName "atpg_patterns_MIN.stil"
     set faultFileName "atpg_faults_MIN.txt"
 }
@@ -731,6 +779,9 @@ if {[string compare $operation "MINU"] == 0} {
     add_pi_constraints 0 alu_operator_i[2]
     add_pi_constraints 0 alu_operator_i[1]
     add_pi_constraints 1 alu_operator_i[0]
+    # Vector Mode ON
+    add_pi_constraints 1 alu_vec_mode_i[0]
+    add_pi_constraints 1 alu_vec_mode_i[1]
     set stilFileName "atpg_patterns_MINU.stil"
     set faultFileName "atpg_faults_MINU.txt"
 }
@@ -744,6 +795,9 @@ if {[string compare $operation "MAX"] == 0} {
     add_pi_constraints 0 alu_operator_i[2]
     add_pi_constraints 1 alu_operator_i[1]
     add_pi_constraints 0 alu_operator_i[0]
+    # Vector Mode ON
+    add_pi_constraints 1 alu_vec_mode_i[0]
+    add_pi_constraints 1 alu_vec_mode_i[1]
     set stilFileName "atpg_patterns_MAX.stil"
     set faultFileName "atpg_faults_MAX.txt"
 }
@@ -757,6 +811,9 @@ if {[string compare $operation "MAXU"] == 0} {
     add_pi_constraints 0 alu_operator_i[2]
     add_pi_constraints 1 alu_operator_i[1]
     add_pi_constraints 1 alu_operator_i[0]
+    # Vector Mode ON
+    add_pi_constraints 1 alu_vec_mode_i[0]
+    add_pi_constraints 1 alu_vec_mode_i[1]
     set stilFileName "atpg_patterns_MAXU.stil"
     set faultFileName "atpg_faults_MAXU.txt"
 }
@@ -772,12 +829,6 @@ if {[string compare $operation "MAXU"] == 0} {
 # add_pi_constraints 1 alu_operator_i[1]
 # add_pi_constraints 0 alu_operator_i[0]
 
-
-
-# Disables vector mode --> VEC_MODE32 = 2'b00
-# Enables vector mode --> VEC_MODE8 = 2'b11
-add_pi_constraints 1 alu_vec_mode_i[0]
-add_pi_constraints 1 alu_vec_mode_i[1]
 
 # Combinational Blocks (ALU)
 add_pi_constraints X clk
