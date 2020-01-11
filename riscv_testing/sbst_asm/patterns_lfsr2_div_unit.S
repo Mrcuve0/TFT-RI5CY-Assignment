@@ -3,7 +3,7 @@
 li x18, 0x00000017 // Random init number
 li x19, 0xffeeffee // Random init number
 
-li x20, 0x00000019 // 100 iterations
+li x20, 0x00000010 // 100 iterations
 
 li x21, 0x00000001
 
