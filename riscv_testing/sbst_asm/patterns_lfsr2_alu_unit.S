@@ -9,7 +9,7 @@ li x20, 0x00000010 // 100 iterations
 
 li x21, 0x00000001
 
-loop:
+loopALU:
 
     #   ____            _         ____  _____     
     #  |  _ \          (_)       / __ \|  __ \    
@@ -432,4 +432,4 @@ loop:
  
     sub x20, x20, x21
 
-bne x20, x0, loop
+bne x20, x0, loopALU

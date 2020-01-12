@@ -7,7 +7,7 @@ li x20, 0x00000010 // 100 iterations
 
 li x21, 0x00000001
 
-loop:
+loopDIV:
     remu    x31, x18, x19
     remu    x10, x19, x18
     remu    x11, x19, x19
@@ -50,4 +50,4 @@ loop:
  
     sub x20, x20, x21
 
-bne x20, x0, loop
+bne x20, x0, loopDIV

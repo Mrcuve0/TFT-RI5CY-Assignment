@@ -11,7 +11,7 @@ li x21, 0x00000001
 # mulhu    --> unsigned    * unsigned
 # mulhsu   --> signed      * unsigned
 
-loop:
+loopMUL:
     mul     x22, x18, x19
     mulh    x23, x18, x19
     mulhu   x24, x18, x19
@@ -45,6 +45,6 @@ loop:
 
     sw  x30, 36(sp)
     sw  x31, 40(sp)
-bne x20, x0, loop
+bne x20, x0, loopMUL
 
 
