@@ -1,6 +1,6 @@
 # vsim -c tb_top_vopt "+firmware=/home/s256813/riscv_testing/sbst_asm/sbst.hex" "+dumpports+nocollapse" -suppress 3015 -do "/home/s256813/riscv_testing/vsim.tcl" 
-# Start time: 21:32:19 on Jan 11,2020
-# Loading /tmp/s256813@po.polito.it_dpi_25672/linux_x86_64_gcc-4.7.4/export_tramp.so
+# Start time: 14:45:20 on Jan 12,2020
+# Loading /tmp/s256813@po.polito.it_dpi_12813/linux_x86_64_gcc-4.7.4/export_tramp.so
 # //  Questa Sim-64
 # //  Version 10.5c_4 linux_x86_64 Nov 30 2016
 # //
@@ -217,15 +217,15 @@
 # Loading work.riscv_random_stall(fast__1)
 # Loading work.riscv_random_interrupt_generator_sv_unit(fast)
 # Loading work.riscv_random_interrupt_generator(fast)
-# Compiling /tmp/s256813@po.polito.it_dpi_25672/linux_x86_64_gcc-4.7.4/exportwrapper.c
-# Loading /tmp/s256813@po.polito.it_dpi_25672/linux_x86_64_gcc-4.7.4/vsim_auto_compile.so
+# Compiling /tmp/s256813@po.polito.it_dpi_12813/linux_x86_64_gcc-4.7.4/exportwrapper.c
+# Loading /tmp/s256813@po.polito.it_dpi_12813/linux_x86_64_gcc-4.7.4/vsim_auto_compile.so
 # do /home/s256813/riscv_testing/vsim.tcl
 # 1
 # EXIT SUCCESS
 # ** Note: $finish    : /home/s256813/riscv_testing/tb/core/tb_top.sv(137)
-#    Time: 696840 ns  Iteration: 1  Instance: /tb_top
+#    Time: 129220 ns  Iteration: 1  Instance: /tb_top
 # 1
 # Break in Module tb_top at /home/s256813/riscv_testing/tb/core/tb_top.sv line 137
 # Stopped at /home/s256813/riscv_testing/tb/core/tb_top.sv line 137
-# End time: 21:36:16 on Jan 11,2020, Elapsed time: 0:03:57
+# End time: 14:45:46 on Jan 12,2020, Elapsed time: 0:00:26
 # Errors: 0, Warnings: 0

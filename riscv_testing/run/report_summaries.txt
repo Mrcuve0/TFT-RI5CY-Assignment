@@ -2,26 +2,26 @@
  -----------------------------------------------
  fault class                     code   #faults
  ------------------------------  ----  ---------
- Detected                         DT      44331
-   detected_by_simulation         DS     (44331)
- Possibly detected                PT          8
-   not_analyzed-pos_detected      NP         (8)
+ Detected                         DT      37991
+   detected_by_simulation         DS     (37991)
+ Possibly detected                PT         13
+   not_analyzed-pos_detected      NP        (13)
  Undetectable                     UD         53
    undetectable-tied              UT         (2)
    undetectable-redundant         UR        (51)
  ATPG untestable                  AU          0
- Not detected                     ND      28396
-   not-controlled                 NC      (3724)
-   not-observed                   NO     (24672)
+ Not detected                     ND      34731
+   not-controlled                 NC      (7317)
+   not-observed                   NO     (27414)
  -----------------------------------------------
  total faults                             72788
- test coverage                            60.95%
- fault coverage                           60.91%
- ATPG effectiveness                       60.98%
+ test coverage                            52.24%
+ fault coverage                           52.20%
+ ATPG effectiveness                       52.28%
  -----------------------------------------------
             Pattern Summary Report
  -----------------------------------------------
  #internal patterns                           0
- #external patterns (dumpports_gate.evcd.fixed)  69684
-     #full_sequential patterns            69684
+ #external patterns (dumpports_gate.evcd.fixed)  12922
+     #full_sequential patterns            12922
  -----------------------------------------------
