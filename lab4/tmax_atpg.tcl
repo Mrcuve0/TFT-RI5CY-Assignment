@@ -9,10 +9,10 @@ read_netlist ../gate/NangateOpenCellLibrary.tlib -library
 read_netlist ../gate/riscv_core.v
 
 # EXE Stage
-# run_build_model riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5
+run_build_model riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5
 
 # MUL module
-run_build_model riscv_mult_SHARED_DSP_MULT0
+# run_build_model riscv_mult_SHARED_DSP_MULT0
 
 ## DRC
 
@@ -567,6 +567,230 @@ if {[string compare $operation "SLL"] == 0} {
     add_pi_constraints 1 alu_vec_mode_i[1]
     set stilFileName "atpg_patterns_SLL.stil"
     set faultFileName "atpg_faults_SLL.txt"
+}
+
+# FF1 Opcode - b0110110
+if {[string compare $operation "FF1"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 1 alu_operator_i[5]
+    add_pi_constraints 1 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 1 alu_operator_i[2]
+    add_pi_constraints 1 alu_operator_i[1]
+    add_pi_constraints 0 alu_operator_i[0]
+    # Vector Mode OFF
+    add_pi_constraints 0 alu_vec_mode_i[0]
+    add_pi_constraints 0 alu_vec_mode_i[1]
+    set stilFileName "atpg_patterns_FF1.stil"
+    set faultFileName "atpg_faults_FF1.txt"
+}
+
+# FL1 Opcode - b0110111
+if {[string compare $operation "FL1"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 1 alu_operator_i[5]
+    add_pi_constraints 1 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 1 alu_operator_i[2]
+    add_pi_constraints 1 alu_operator_i[1]
+    add_pi_constraints 1 alu_operator_i[0]
+    # Vector Mode ON
+    add_pi_constraints 0 alu_vec_mode_i[0]
+    add_pi_constraints 0 alu_vec_mode_i[1]
+    set stilFileName "atpg_patterns_FL1.stil"
+    set faultFileName "atpg_faults_FL1.txt"
+}
+
+# CNT Opcode - b0110100
+if {[string compare $operation "CNT"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 1 alu_operator_i[5]
+    add_pi_constraints 1 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 1 alu_operator_i[2]
+    add_pi_constraints 0 alu_operator_i[1]
+    add_pi_constraints 0 alu_operator_i[0]
+    # Vector Mode OFF
+    add_pi_constraints 0 alu_vec_mode_i[0]
+    add_pi_constraints 0 alu_vec_mode_i[1]
+    set stilFileName "atpg_patterns_CNT.stil"
+    set faultFileName "atpg_faults_CNT.txt"
+}
+
+# CLB Opcode - b0110101
+if {[string compare $operation "CLB"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 1 alu_operator_i[5]
+    add_pi_constraints 1 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 1 alu_operator_i[2]
+    add_pi_constraints 0 alu_operator_i[1]
+    add_pi_constraints 1 alu_operator_i[0]
+    # Vector Mode ON
+    add_pi_constraints 0 alu_vec_mode_i[0]
+    add_pi_constraints 0 alu_vec_mode_i[1]
+    set stilFileName "atpg_patterns_CLB.stil"
+    set faultFileName "atpg_faults_CLB.txt"
+}
+
+# LTS Opcode - b0000000
+if {[string compare $operation "LTS"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 0 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 0 alu_operator_i[2]
+    add_pi_constraints 0 alu_operator_i[1]
+    add_pi_constraints 0 alu_operator_i[0]
+    # Vector Mode OFF
+    add_pi_constraints 0 alu_vec_mode_i[0]
+    add_pi_constraints 0 alu_vec_mode_i[1]
+    set stilFileName "atpg_patterns_LTS.stil"
+    set faultFileName "atpg_faults_LTS.txt"
+}
+
+# LTU Opcode - b0000001
+if {[string compare $operation "LTU"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 0 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 0 alu_operator_i[2]
+    add_pi_constraints 0 alu_operator_i[1]
+    add_pi_constraints 1 alu_operator_i[0]
+    # Vector Mode ON
+    add_pi_constraints 0 alu_vec_mode_i[0]
+    add_pi_constraints 0 alu_vec_mode_i[1]
+    set stilFileName "atpg_patterns_LTU.stil"
+    set faultFileName "atpg_faults_LTU.txt"
+}
+
+# LES Opcode - b0000100
+if {[string compare $operation "LES"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 0 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 1 alu_operator_i[2]
+    add_pi_constraints 0 alu_operator_i[1]
+    add_pi_constraints 0 alu_operator_i[0]
+    # Vector Mode OFF
+    add_pi_constraints 0 alu_vec_mode_i[0]
+    add_pi_constraints 0 alu_vec_mode_i[1]
+    set stilFileName "atpg_patterns_LES.stil"
+    set faultFileName "atpg_faults_LES.txt"
+}
+
+# LEU Opcode - b0000101
+if {[string compare $operation "LEU"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 0 alu_operator_i[4]
+    add_pi_constraints 0 alu_operator_i[3]
+    add_pi_constraints 1 alu_operator_i[2]
+    add_pi_constraints 0 alu_operator_i[1]
+    add_pi_constraints 1 alu_operator_i[0]
+    # Vector Mode OFF
+    add_pi_constraints 0 alu_vec_mode_i[0]
+    add_pi_constraints 0 alu_vec_mode_i[1]
+    set stilFileName "atpg_patterns_LEU.stil"
+    set faultFileName "atpg_faults_LEU.txt"
+}
+
+# GTS Opcode - b0001000
+if {[string compare $operation "GTS"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 0 alu_operator_i[4]
+    add_pi_constraints 1 alu_operator_i[3]
+    add_pi_constraints 0 alu_operator_i[2]
+    add_pi_constraints 0 alu_operator_i[1]
+    add_pi_constraints 0 alu_operator_i[0]
+    # Vector Mode OFF
+    add_pi_constraints 0 alu_vec_mode_i[0]
+    add_pi_constraints 0 alu_vec_mode_i[1]
+    set stilFileName "atpg_patterns_GTS.stil"
+    set faultFileName "atpg_faults_GTS.txt"
+}
+
+# GTU Opcode - b0001001
+if {[string compare $operation "GTU"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 0 alu_operator_i[4]
+    add_pi_constraints 1 alu_operator_i[3]
+    add_pi_constraints 0 alu_operator_i[2]
+    add_pi_constraints 0 alu_operator_i[1]
+    add_pi_constraints 1 alu_operator_i[0]
+    # Vector Mode OFF
+    add_pi_constraints 0 alu_vec_mode_i[0]
+    add_pi_constraints 0 alu_vec_mode_i[1]
+    set stilFileName "atpg_patterns_GTU.stil"
+    set faultFileName "atpg_faults_GTU.txt"
+}
+
+# GES Opcode - b0001010
+if {[string compare $operation "GES"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 0 alu_operator_i[4]
+    add_pi_constraints 1 alu_operator_i[3]
+    add_pi_constraints 0 alu_operator_i[2]
+    add_pi_constraints 1 alu_operator_i[1]
+    add_pi_constraints 0 alu_operator_i[0]
+    # Vector Mode OFF
+    add_pi_constraints 0 alu_vec_mode_i[0]
+    add_pi_constraints 0 alu_vec_mode_i[1]
+    set stilFileName "atpg_patterns_GES.stil"
+    set faultFileName "atpg_faults_GES.txt"
+}
+
+# GEU Opcode - b0001011
+if {[string compare $operation "GEU"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 0 alu_operator_i[4]
+    add_pi_constraints 1 alu_operator_i[3]
+    add_pi_constraints 0 alu_operator_i[2]
+    add_pi_constraints 1 alu_operator_i[1]
+    add_pi_constraints 1 alu_operator_i[0]
+    # Vector Mode OFF
+    add_pi_constraints 0 alu_vec_mode_i[0]
+    add_pi_constraints 0 alu_vec_mode_i[1]
+    set stilFileName "atpg_patterns_GEU.stil"
+    set faultFileName "atpg_faults_GEU.txt"
+}
+
+# EQ Opcode - b0001100
+if {[string compare $operation "EQ"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 0 alu_operator_i[4]
+    add_pi_constraints 1 alu_operator_i[3]
+    add_pi_constraints 1 alu_operator_i[2]
+    add_pi_constraints 0 alu_operator_i[1]
+    add_pi_constraints 0 alu_operator_i[0]
+    # Vector Mode OFF
+    add_pi_constraints 0 alu_vec_mode_i[0]
+    add_pi_constraints 0 alu_vec_mode_i[1]
+    set stilFileName "atpg_patterns_EQ.stil"
+    set faultFileName "atpg_faults_EQ.txt"
+}
+
+# NE Opcode - b0001101
+if {[string compare $operation "NE"] == 0} {
+    add_pi_constraints 0 alu_operator_i[6]
+    add_pi_constraints 0 alu_operator_i[5]
+    add_pi_constraints 0 alu_operator_i[4]
+    add_pi_constraints 1 alu_operator_i[3]
+    add_pi_constraints 1 alu_operator_i[2]
+    add_pi_constraints 0 alu_operator_i[1]
+    add_pi_constraints 1 alu_operator_i[0]
+    # Vector Mode OFF
+    add_pi_constraints 0 alu_vec_mode_i[0]
+    add_pi_constraints 0 alu_vec_mode_i[1]
+    set stilFileName "atpg_patterns_NE.stil"
+    set faultFileName "atpg_faults_NE.txt"
 }
 
 # XOR Opcode - b0101111

@@ -6,6 +6,7 @@ stil_filename = sys.argv[1]
 
 ls3_Ops = ['p.adduN', 'p.subuN']
 ls2_Ops = ['p.clip', 'p.clipu']
+rs1_Ops = ['p.ff1', 'p.fl1', 'p.clb', 'p.cnt']
 
 signals_bits = [
 	('clk', 1),
@@ -114,14 +115,26 @@ instr2operands = {
 	'0100111' : 'sll',  # rd, rs1, rs2
 
 	# Bit counting
-	'0110110' : 'ff1', 	# rd, rs1
-	'0110111' : 'fl1', 	# rd, rs1
-	'0110100' : 'cnt',	# rd, rs1
-	'0110101' : 'clb', 	# rd, rs1
+	'0110110' : 'p.ff1', 	# rd, rs1
+	'0110111' : 'p.fl1', 	# rd, rs1
+	'0110100' : 'p.cnt',	# rd, rs1
+	'0110101' : 'p.clb', 	# rd, rs1
 
 	# Sign/Zero Extensions
 	'0111110' : 'exts',
 	'0111111' : 'ext',
+
+	# Comparisons
+	'0000000' : 'lts',
+	'0000001' : 'ltu',
+	'0000100' : 'les',
+	'0000101' : 'leu',
+	'0001000' : 'gts',
+	'0001001' : 'gtu',
+	'0001010' : 'ges',
+	'0001011' : 'geu',
+	'0001100' : 'eq',
+	'0001101' : 'ne',
 
 	# Set Lower Than operations
 	'0000010' : 'p.slts',
@@ -131,8 +144,8 @@ instr2operands = {
 
 	# Absolute value
 	'0010100' : 'abs',
-	'0010110' : 'p.clip',		# rd, rs1, ls2
-    '0010111' : 'p.clipu',		# rd, rs1, ls2
+	'0010110' : 'p.clip',	# rd, rs1, ls2
+    '0010111' : 'p.clipu',	# rd, rs1, ls2
 
 	# min/max
 	'0010000' : 'p.min',	# rd, rs1, rs2
@@ -145,6 +158,11 @@ instr2operands = {
 	'0110001' : 'div',
 	'0110010' : 'remu',
 	'0110011' : 'rem',
+
+	'0111010' : 'shuf',
+	'0111011' : 'shuf2',
+	'0111000' : 'pckl0',
+	'0111001' : 'pckhi',
 
 	# MUL_
 	'000' : 'mac32',
@@ -188,6 +206,8 @@ with open(stil_filename) as stil_file:
 				# print('li t6, {}'.format(ls2))
 				# print('{} t2, t0, t1, t6'.format(instr))
 				print('{} t2, t0, {}'.format(instr, hex(random.randint(0, 31))))
+			elif (instr in rs1_Ops):
+				print('{} t2, t0'.format(instr))
 			else:
 				print('{} t2, t0, t1'.format(instr))
 
@@ -210,6 +230,8 @@ with open(stil_filename) as stil_file:
 				# print('li t6, {}'.format(ls2))
 				# print('{} t2, t0, t1, t6'.format(instr))
 				print('{} t5, t3, {}'.format(instr, hex(random.randint(0, 31))))
+			elif (instr in rs1_Ops):
+				print('{} t2, t3'.format(instr))
 			else:
 				print('{} t5, t3, t4'.format(instr))
 

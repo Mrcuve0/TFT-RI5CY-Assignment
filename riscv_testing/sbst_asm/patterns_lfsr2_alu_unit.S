@@ -11,24 +11,34 @@ li x21, 0x00000001
 
 loopALU:
 
-    #   ____            _         ____  _____     
-    #  |  _ \          (_)       / __ \|  __ \    
-    #  | |_) | __ _ ___ _  ___  | |  | | |__) |__ 
-    #  |  _ < / _` / __| |/ __| | |  | |  ___/ __|
-    #  | |_) | (_| \__ \ | (__  | |__| | |   \__ \
-    #  |____/ \__,_|___/_|\___|  \____/|_|   |___/
-    #                                             
+    #    _____                           _            _     _    _    ____            
+    #   / ____|                         | |     /\   | |   | |  | |  / __ \           
+    #  | |  __  ___ _ __   ___ _ __ __ _| |    /  \  | |   | |  | | | |  | |_ __  ___ 
+    #  | | |_ |/ _ \ '_ \ / _ \ '__/ _` | |   / /\ \ | |   | |  | | | |  | | '_ \/ __|
+    #  | |__| |  __/ | | |  __/ | | (_| | |  / ____ \| |___| |__| | | |__| | |_) \__ \
+    #   \_____|\___|_| |_|\___|_|  \__,_|_| /_/    \_\______\____/   \____/| .__/|___/
+    #                                                                      | |        
+    #                                                                      |_|                                            
              
-    pv.add.sc.b     x22, x18, x19
-    pv.add.sc.b     x23, x19, x18
-    pv.add.sc.b     x24, x18, x18
-    pv.add.sc.b     x25, x19, x19
+    p.abs  x22, x18
+    p.abs  x23, x19
 
-    pv.add.sci.b    x26, x18, 11
-    pv.add.sci.b    x27, x19, 22
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
 
-    pv.add.sci.h    x28, x18, 4
-    pv.add.sci.h    x29, x19, 20
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    p.slet  x22, x18, x19
+    p.slet  x23, x19, x18
+    p.slet  x24, x18, x18
+    p.slet  x25, x19, x19
+
+    p.sletu x26, x18, x19
+    p.sletu x27, x19, x18
+    p.sletu x28, x18, x18
+    p.sletu x29, x19, x19
 
     sw  x22, 4(sp)
     sw  x23, 8(sp)
@@ -43,40 +53,15 @@ loopALU:
     pv.xor.sc.b x19, x22, x25
 
 
-    pv.sub.sc.b     x22, x18, x19
-    pv.sub.sc.b     x23, x19, x18
-    pv.sub.sc.b     x24, x18, x18
-    pv.sub.sc.b     x25, x19, x19
+    p.min  x22, x18, x19
+    p.min  x23, x19, x18
+    p.min  x24, x18, x18
+    p.min  x25, x19, x19
 
-    pv.sub.sci.b    x26, x18, 6
-    pv.sub.sci.b    x27, x19, 30
-
-    pv.sub.sci.h    x28, x18, 7
-    pv.sub.sci.h    x29, x19, 3
-
-    sw  x22, 4(sp)
-    sw  x23, 8(sp)
-    sw  x24, 12(sp)
-    sw  x25, 16(sp)
-    sw  x26, 20(sp)
-    sw  x27, 24(sp)
-    sw  x28, 28(sp)
-    sw  x29, 32(sp)
-
-    pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
-
-
-    pv.avg.sc.b     x22, x18, x19
-    pv.avg.sc.b     x23, x19, x18
-    pv.avg.sc.b     x24, x18, x18
-    pv.avg.sc.b     x25, x19, x19
-
-    pv.avg.sci.b    x26, x18, 8
-    pv.avg.sci.b    x27, x19, 26
-
-    pv.avg.sci.h    x28, x18, 29
-    pv.avg.sci.h    x29, x19, 3
+    p.minu x26, x18, x19
+    p.minu x27, x19, x18
+    p.minu x28, x18, x18
+    p.minu x29, x19, x19
 
     sw  x22, 4(sp)
     sw  x23, 8(sp)
@@ -91,47 +76,15 @@ loopALU:
     pv.xor.sc.b x19, x22, x25
 
 
-    pv.or.sc.b     x22, x18, x19
-    pv.or.sc.b     x23, x19, x18
-    pv.or.sc.b     x24, x18, x18
-    pv.or.sc.b     x25, x19, x19
+    p.max  x22, x18, x19
+    p.max  x23, x19, x18
+    p.max  x24, x18, x18
+    p.max  x25, x19, x19
 
-    pv.or.sci.b    x26, x18, 23
-    pv.or.sci.b    x27, x19, 25
-
-    pv.or.sci.h    x28, x18, 3
-    pv.or.sci.h    x29, x19, 31
-
-    sw  x22, 4(sp)
-    sw  x23, 8(sp)
-    sw  x24, 12(sp)
-    sw  x25, 16(sp)
-    sw  x26, 20(sp)
-    sw  x27, 24(sp)
-    sw  x28, 28(sp)
-    sw  x29, 32(sp)
-
-    pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
-
-    #    _____ _     _  __ _       
-    #   / ____| |   (_)/ _| |      
-    #  | (___ | |__  _| |_| |_ ___ 
-    #   \___ \| '_ \| |  _| __/ __|
-    #   ____) | | | | | | | |_\__ \
-    #  |_____/|_| |_|_|_|  \__|___/
-    #                              
-
-    pv.srl.sc.b     x22, x18, x19
-    pv.srl.sc.b     x23, x19, x18
-    pv.srl.sc.b     x24, x18, x18
-    pv.srl.sc.b     x25, x19, x19
-
-    pv.srl.sci.b    x26, x18, 14
-    pv.srl.sci.b    x27, x19, 19
-
-    pv.srl.sci.h    x28, x18, 4
-    pv.srl.sci.h    x29, x19, 19
+    p.maxu x26, x18, x19
+    p.maxu x27, x19, x18
+    p.maxu x28, x18, x18
+    p.maxu x29, x19, x19
 
     sw  x22, 4(sp)
     sw  x23, 8(sp)
@@ -145,119 +98,6 @@ loopALU:
     pv.xor.sc.b x18, x24, x29
     pv.xor.sc.b x19, x22, x25
 
-
-    pv.sra.sc.b     x22, x18, x19
-    pv.sra.sc.b     x23, x19, x18
-    pv.sra.sc.b     x24, x18, x18
-    pv.sra.sc.b     x25, x19, x19
-
-    pv.sra.sci.b    x26, x18, 30
-    pv.sra.sci.b    x27, x19, 6
-
-    pv.sra.sci.h    x28, x18, 11
-    pv.sra.sci.h    x29, x19, 2
-
-    sw  x22, 4(sp)
-    sw  x23, 8(sp)
-    sw  x24, 12(sp)
-    sw  x25, 16(sp)
-    sw  x26, 20(sp)
-    sw  x27, 24(sp)
-    sw  x28, 28(sp)
-    sw  x29, 32(sp)
-
-    pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
-
-
-    p.ror x22, x18, x19
-    p.ror x23, x19, x18
-    p.ror x24, x18, x18
-    p.ror x25, x19, x19
-
-    # p.ror x26, x18, 30
-    # p.ror x27, x19, 6
-
-    # p.ror x28, x18, 11
-    # p.ror x29, x19, 2
-
-    sw  x22, 4(sp)
-    sw  x23, 8(sp)
-    sw  x24, 12(sp)
-    sw  x25, 16(sp)
-    # sw  x26, 20(sp)
-    # sw  x27, 24(sp)
-    # sw  x28, 28(sp)
-    # sw  x29, 32(sp)
-
-    pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
-
-
-    pv.sll.sc.b     x22, x18, x19
-    pv.sll.sc.b     x23, x19, x18
-    pv.sll.sc.b     x24, x18, x18
-    pv.sll.sc.b     x25, x19, x19
-
-    pv.sll.sci.b    x26, x18, 26
-    pv.sll.sci.b    x27, x19, 7
-
-    pv.sll.sci.h    x28, x18, 30
-    pv.sll.sci.h    x29, x19, 4
-
-    sw  x22, 4(sp)
-    sw  x23, 8(sp)
-    sw  x24, 12(sp)
-    sw  x25, 16(sp)
-    sw  x26, 20(sp)
-    sw  x27, 24(sp)
-    sw  x28, 28(sp)
-    sw  x29, 32(sp)
-
-    pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
-
-    #   ____  _ _      _____                  _   _             
-    #  |  _ \(_) |    / ____|                | | (_)            
-    #  | |_) |_| |_  | |     ___  _   _ _ __ | |_ _ _ __   __ _ 
-    #  |  _ <| | __| | |    / _ \| | | | '_ \| __| | '_ \ / _` |
-    #  | |_) | | |_  | |___| (_) | |_| | | | | |_| | | | | (_| |
-    #  |____/|_|\__|  \_____\___/ \__,_|_| |_|\__|_|_| |_|\__, |
-    #                                                      __/ |
-    #                                                     |___/ 
-
-    p.ff1   x22, x18
-    p.ff1   x23, x19
-    
-    p.fl1   x24, x18
-    p.fl1   x25, x19
-
-    p.cnt   x26, x18
-    p.cnt   x27, x19
-
-    p.clb   x28, x18
-    p.clb   x29, x19
-
-    sw  x22, 4(sp)
-    sw  x23, 8(sp)
-    sw  x24, 12(sp)
-    sw  x25, 16(sp)
-    sw  x26, 20(sp)
-    sw  x27, 24(sp)
-    sw  x28, 28(sp)
-    sw  x29, 32(sp)
-
-    pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
-
-    #    _____ _                 ________                ______      _                 _                 
-    #   / ____(_)               / /___  /               |  ____|    | |               (_)                
-    #  | (___  _  __ _ _ __    / /   / / ___ _ __ ___   | |__  __  _| |_ ___ _ __  ___ _  ___  _ __  ___ 
-    #   \___ \| |/ _` | '_ \  / /   / / / _ \ '__/ _ \  |  __| \ \/ / __/ _ \ '_ \/ __| |/ _ \| '_ \/ __|
-    #   ____) | | (_| | | | |/ /   / /_|  __/ | | (_) | | |____ >  <| ||  __/ | | \__ \ | (_) | | | \__ \
-    #  |_____/|_|\__, |_| |_/_/   /_____\___|_|  \___/  |______/_/\_\\__\___|_| |_|___/_|\___/|_| |_|___/
-    #             __/ |                                                                                  
-    #            |___/                                                                                   
 
     p.exths x22, x18
     p.exths x23, x19
@@ -283,52 +123,6 @@ loopALU:
     pv.xor.sc.b x18, x24, x29
     pv.xor.sc.b x19, x22, x25
 
-    #    _____      _     _                              _______ _                 
-    #   / ____|    | |   | |                            |__   __| |                
-    #  | (___   ___| |_  | |     _____      _____ _ __     | |  | |__   __ _ _ __  
-    #   \___ \ / _ \ __| | |    / _ \ \ /\ / / _ \ '__|    | |  | '_ \ / _` | '_ \ 
-    #   ____) |  __/ |_  | |___| (_) \ V  V /  __/ |       | |  | | | | (_| | | | |
-    #  |_____/ \___|\__| |______\___/ \_/\_/ \___|_|       |_|  |_| |_|\__,_|_| |_|
-    #                                                                              
-
-    p.slet  x22, x18, x19
-    p.slet  x23, x19, x18
-    p.slet  x24, x18, x18
-    p.slet  x25, x19, x19
-
-    p.sletu x26, x18, x19
-    p.sletu x27, x19, x18
-    p.sletu x28, x18, x18
-    p.sletu x29, x19, x19
-
-    sw  x22, 4(sp)
-    sw  x23, 8(sp)
-    sw  x24, 12(sp)
-    sw  x25, 16(sp)
-    sw  x26, 20(sp)
-    sw  x27, 24(sp)
-    sw  x28, 28(sp)
-    sw  x29, 32(sp)
-
-    pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
-
-    #            _               _       _        __      __   _            
-    #      /\   | |             | |     | |       \ \    / /  | |           
-    #     /  \  | |__  ___  ___ | |_   _| |_ ___   \ \  / /_ _| |_   _  ___ 
-    #    / /\ \ | '_ \/ __|/ _ \| | | | | __/ _ \   \ \/ / _` | | | | |/ _ \
-    #   / ____ \| |_) \__ \ (_) | | |_| | ||  __/    \  / (_| | | |_| |  __/
-    #  /_/    \_\_.__/|___/\___/|_|\__,_|\__\___|     \/ \__,_|_|\__,_|\___|
-    #                                                                       
-
-    p.abs  x22, x18
-    p.abs  x23, x19
-
-    sw  x22, 4(sp)
-    sw  x23, 8(sp)
-
-    pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
 
     p.clip  x22, x18, 28
     p.clip  x23, x19, 31
@@ -352,6 +146,7 @@ loopALU:
     pv.xor.sc.b x18, x24, x29
     pv.xor.sc.b x19, x22, x25
 
+
     p.clipr  x22, x18, x19
     p.clipr  x23, x19, x18
     p.clipr  x24, x18, x18
@@ -374,24 +169,549 @@ loopALU:
     pv.xor.sc.b x18, x24, x29
     pv.xor.sc.b x19, x22, x25
 
-    #   __  __ _           ____  __            
-    #  |  \/  (_)         / /  \/  |           
-    #  | \  / |_ _ __    / /| \  / | __ ___  __
-    #  | |\/| | | '_ \  / / | |\/| |/ _` \ \/ /
-    #  | |  | | | | | |/ /  | |  | | (_| |>  < 
-    #  |_|  |_|_|_| |_/_/   |_|  |_|\__,_/_/\_\
-    #                                          
+
+    p.addN  x22, x18, x19, 15
+    p.addN  x23, x19, x18, 3
+    p.addN  x24, x18, x18, 20
+    p.addN  x25, x19, x19, 25
+
+    p.adduN  x26, x18, x19, 2
+    p.adduN  x27, x19, x18, 13
+    p.adduN  x28, x18, x18, 3
+    p.adduN  x29, x19, x19, 9
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    p.adduN  x22, x18, x19, 12
+    p.adduN  x23, x19, x18, 17
+    p.adduN  x24, x18, x18, 17
+    p.adduN  x25, x19, x19, 31
+
+    p.addRN  x26, x18, x19, 1
+    p.addRN  x27, x19, x18, 13
+    p.addRN  x28, x18, x18, 21
+    p.addRN  x29, x19, x19, 10
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    p.adduRN  x22, x18, x19, 13
+    p.adduRN  x23, x19, x18, 17
+    p.adduRN  x24, x18, x18, 21
+    p.adduRN  x25, x19, x19, 5
+
+    p.addNr  x26, x18, x19
+    p.addNr  x27, x19, x18
+    p.addNr  x28, x18, x18
+    p.addNr  x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    p.adduNr  x22, x18, x19
+    p.adduNr  x23, x19, x18
+    p.adduNr  x24, x18, x18
+    p.adduNr  x25, x19, x19
+
+    p.addRNr  x26, x18, x19
+    p.addRNr  x27, x19, x18
+    p.addRNr  x28, x18, x18
+    p.addRNr  x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    p.adduRNr  x22, x18, x19
+    p.adduRNr  x23, x19, x18
+    p.adduRNr  x24, x18, x18
+    p.adduRNr  x25, x19, x19
+
+    p.subN  x26, x18, x19, 31
+    p.subN  x27, x19, x18, 5
+    p.subN  x28, x18, x18, 28
+    p.subN  x29, x19, x19, 21
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    p.subuN  x22, x18, x19, 10
+    p.subuN  x23, x19, x18, 24
+    p.subuN  x24, x18, x18, 11
+    p.subuN  x25, x19, x19, 29
+
+    p.subRN  x26, x18, x19, 20
+    p.subRN  x27, x19, x18, 11
+    p.subRN  x28, x18, x18, 10
+    p.subRN  x29, x19, x19, 29
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    p.subuRN  x22, x18, x19, 5
+    p.subuRN  x23, x19, x18, 4
+    p.subuRN  x24, x18, x18, 24
+    p.subuRN  x25, x19, x19, 13
+
+    p.subNr  x26, x18, x19
+    p.subNr  x27, x19, x18
+    p.subNr  x28, x18, x18
+    p.subNr  x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    p.subuNr  x22, x18, x19
+    p.subuNr  x23, x19, x18
+    p.subuNr  x24, x18, x18
+    p.subuNr  x25, x19, x19
+
+    p.subRNr  x26, x18, x19
+    p.subRNr  x27, x19, x18
+    p.subRNr  x28, x18, x18
+    p.subRNr  x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    p.subuRNr  x26, x18, x19
+    p.subuRNr  x27, x19, x18
+    p.subuRNr  x28, x18, x18
+    p.subuRNr  x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    #  __      __       _             _       _            _     _    _    ____            
+    #  \ \    / /      | |           (_)     | |     /\   | |   | |  | |  / __ \           
+    #   \ \  / /__  ___| |_ ___  _ __ _  __ _| |    /  \  | |   | |  | | | |  | |_ __  ___ 
+    #    \ \/ / _ \/ __| __/ _ \| '__| |/ _` | |   / /\ \ | |   | |  | | | |  | | '_ \/ __|
+    #     \  /  __/ (__| || (_) | |  | | (_| | |  / ____ \| |___| |__| | | |__| | |_) \__ \
+    #      \/ \___|\___|\__\___/|_|  |_|\__,_|_| /_/    \_\______\____/   \____/| .__/|___/
+    #                                                                           | |        
+    #                                                                           |_|        
+
+    pv.add.sc.h     x22, x18, x19
+    pv.add.sc.h     x23, x19, x18
+    pv.add.sc.h     x24, x18, x18
+    pv.add.sc.h     x25, x19, x19
+
+    pv.add.sci.h    x26, x18, 12
+    pv.add.sci.h    x27, x19, 17
+    pv.add.sci.h    x28, x18, 14
+    pv.add.sci.h    x29, x19, 28
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.add.sc.b     x22, x18, x19
+    pv.add.sc.b     x23, x19, x18
+    pv.add.sc.b     x24, x18, x18
+    pv.add.sc.b     x25, x19, x19
+
+    pv.add.sci.b    x26, x18, 11
+    pv.add.sci.b    x27, x19, 22
+    pv.add.sci.b    x28, x18, 3
+    pv.add.sci.b    x29, x19, 29
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+    
+    pv.sub.sc.h     x22, x18, x19
+    pv.sub.sc.h     x23, x19, x18
+    pv.sub.sc.h     x24, x18, x18
+    pv.sub.sc.h     x25, x19, x19
+
+    pv.sub.sci.h    x26, x18, 19
+    pv.sub.sci.h    x27, x19, 25
+    pv.sub.sci.h    x28, x18, 26
+    pv.sub.sci.h    x29, x19, 27
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.sub.sc.b     x22, x18, x19
+    pv.sub.sc.b     x23, x19, x18
+    pv.sub.sc.b     x24, x18, x18
+    pv.sub.sc.b     x25, x19, x19
+
+    pv.sub.sci.b    x26, x18, 4
+    pv.sub.sci.b    x27, x19, 22
+    pv.sub.sci.b    x28, x18, 25
+    pv.sub.sci.b    x29, x19, 9
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.avg.sc.h     x22, x18, x19
+    pv.avg.sc.h     x23, x19, x18
+    pv.avg.sc.h     x24, x18, x18
+    pv.avg.sc.h     x25, x19, x19
+
+    pv.avg.sci.h    x26, x18, 2
+    pv.avg.sci.h    x27, x19, 6
+    pv.avg.sci.h    x28, x18, 28
+    pv.avg.sci.h    x29, x19, 5
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.avg.sc.b     x22, x18, x19
+    pv.avg.sc.b     x23, x19, x18
+    pv.avg.sc.b     x24, x18, x18
+    pv.avg.sc.b     x25, x19, x19
+
+    pv.avg.sci.b    x26, x18, 13
+    pv.avg.sci.b    x27, x19, 18
+    pv.avg.sci.b    x28, x18, 25
+    pv.avg.sci.b    x29, x19, 31
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.avgu.sc.h     x22, x18, x19
+    pv.avgu.sc.h     x23, x19, x18
+    pv.avgu.sc.h     x24, x18, x18
+    pv.avgu.sc.h     x25, x19, x19
+
+    pv.avgu.sci.h    x26, x18, 23
+    pv.avgu.sci.h    x27, x19, 9
+    pv.avgu.sci.h    x28, x18, 6
+    pv.avgu.sci.h    x29, x19, 5
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.avgu.sc.b     x22, x18, x19
+    pv.avgu.sc.b     x23, x19, x18
+    pv.avgu.sc.b     x24, x18, x18
+    pv.avgu.sc.b     x25, x19, x19
+
+    pv.avgu.sci.b    x26, x18, 1
+    pv.avgu.sci.b    x27, x19, 30
+    pv.avgu.sci.b    x28, x18, 20
+    pv.avgu.sci.b    x29, x19, 14
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.min.sc.h     x22, x18, x19
+    pv.min.sc.h     x23, x19, x18
+    pv.min.sc.h     x24, x18, x18
+    pv.min.sc.h     x25, x19, x19
+
+    pv.min.sci.h    x26, x18, 6
+    pv.min.sci.h    x27, x19, 31
+    pv.min.sci.h    x28, x18, 28
+    pv.min.sci.h    x29, x19, 19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
 
     pv.min.sc.b     x22, x18, x19
     pv.min.sc.b     x23, x19, x18
     pv.min.sc.b     x24, x18, x18
     pv.min.sc.b     x25, x19, x19
 
-    pv.min.sci.b    x26, x18, 27
-    pv.min.sci.b    x27, x19, 15
+    pv.min.sci.b    x26, x18, 6
+    pv.min.sci.b    x27, x19, 31
+    pv.min.sci.b    x28, x18, 28
+    pv.min.sci.b    x29, x19, 19
 
-    pv.min.sci.h    x28, x18, 11
-    pv.min.sci.h    x29, x19, 11
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.minu.sc.h     x22, x18, x19
+    pv.minu.sc.h     x23, x19, x18
+    pv.minu.sc.h     x24, x18, x18
+    pv.minu.sc.h     x25, x19, x19
+
+    pv.minu.sci.h    x26, x18, 10
+    pv.minu.sci.h    x27, x19, 17
+    pv.minu.sci.h    x28, x18, 24
+    pv.minu.sci.h    x29, x19, 31
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.minu.sc.b     x22, x18, x19
+    pv.minu.sc.b     x23, x19, x18
+    pv.minu.sc.b     x24, x18, x18
+    pv.minu.sc.b     x25, x19, x19
+
+    pv.minu.sci.b    x26, x18, 27
+    pv.minu.sci.b    x27, x19, 7
+    pv.minu.sci.b    x28, x18, 9
+    pv.minu.sci.b    x29, x19, 30
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.max.sc.h     x22, x18, x19
+    pv.max.sc.h     x23, x19, x18
+    pv.max.sc.h     x24, x18, x18
+    pv.max.sc.h     x25, x19, x19
+
+    pv.max.sci.h    x26, x18, 4
+    pv.max.sci.h    x27, x19, 7
+    pv.max.sci.h    x28, x18, 21
+    pv.max.sci.h    x29, x19, 23
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.max.sc.b     x22, x18, x19
+    pv.max.sc.b     x23, x19, x18
+    pv.max.sc.b     x24, x18, x18
+    pv.max.sc.b     x25, x19, x19
+
+    pv.max.sci.b    x26, x18, 3
+    pv.max.sci.b    x27, x19, 16
+    pv.max.sci.b    x28, x18, 17
+    pv.max.sci.b    x29, x19, 23
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.maxu.sc.h     x22, x18, x19
+    pv.maxu.sc.h     x23, x19, x18
+    pv.maxu.sc.h     x24, x18, x18
+    pv.maxu.sc.h     x25, x19, x19
+
+    pv.maxu.sci.h    x26, x18, 1
+    pv.maxu.sci.h    x27, x19, 7
+    pv.maxu.sci.h    x28, x18, 3
+    pv.maxu.sci.h    x29, x19, 16
 
     sw  x22, 4(sp)
     sw  x23, 8(sp)
@@ -411,11 +731,10 @@ loopALU:
     pv.maxu.sc.b     x24, x18, x18
     pv.maxu.sc.b     x25, x19, x19
 
-    pv.maxu.sci.b    x26, x18, 21
-    pv.maxu.sci.b    x27, x19, 27
-
-    pv.maxu.sci.h    x28, x18, 7
-    pv.maxu.sci.h    x29, x19, 28
+    pv.maxu.sci.b    x26, x18, 11
+    pv.maxu.sci.b    x27, x19, 25
+    pv.maxu.sci.b    x28, x18, 9
+    pv.maxu.sci.b    x29, x19, 7
 
     sw  x22, 4(sp)
     sw  x23, 8(sp)
@@ -429,7 +748,343 @@ loopALU:
     pv.xor.sc.b x18, x24, x29
     pv.xor.sc.b x19, x22, x25
 
- 
+
+    pv.srl.sc.h     x22, x18, x19
+    pv.srl.sc.h     x23, x19, x18
+    pv.srl.sc.h     x24, x18, x18
+    pv.srl.sc.h     x25, x19, x19
+
+    pv.srl.sci.h    x26, x18, 23
+    pv.srl.sci.h    x27, x19, 3
+    pv.srl.sci.h    x28, x18, 8
+    pv.srl.sci.h    x29, x19, 13
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.srl.sc.b     x22, x18, x19
+    pv.srl.sc.b     x23, x19, x18
+    pv.srl.sc.b     x24, x18, x18
+    pv.srl.sc.b     x25, x19, x19
+
+    pv.srl.sci.b    x26, x18, 8
+    pv.srl.sci.b    x27, x19, 23
+    pv.srl.sci.b    x28, x18, 4
+    pv.srl.sci.b    x29, x19, 12
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.sra.sc.h     x22, x18, x19
+    pv.sra.sc.h     x23, x19, x18
+    pv.sra.sc.h     x24, x18, x18
+    pv.sra.sc.h     x25, x19, x19
+
+    pv.sra.sci.h    x26, x18, 18
+    pv.sra.sci.h    x27, x19, 14
+    pv.sra.sci.h    x28, x18, 1
+    pv.sra.sci.h    x29, x19, 23
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.sra.sc.b     x22, x18, x19
+    pv.sra.sc.b     x23, x19, x18
+    pv.sra.sc.b     x24, x18, x18
+    pv.sra.sc.b     x25, x19, x19
+
+    pv.sra.sci.b    x26, x18, 7
+    pv.sra.sci.b    x27, x19, 23
+    pv.sra.sci.b    x28, x18, 9
+    pv.sra.sci.b    x29, x19, 19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.sll.sc.h     x22, x18, x19
+    pv.sll.sc.h     x23, x19, x18
+    pv.sll.sc.h     x24, x18, x18
+    pv.sll.sc.h     x25, x19, x19
+
+    pv.sll.sci.h    x26, x18, 25
+    pv.sll.sci.h    x27, x19, 16
+    pv.sll.sci.h    x28, x18, 18
+    pv.sll.sci.h    x29, x19, 4
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.sll.sc.b     x22, x18, x19
+    pv.sll.sc.b     x23, x19, x18
+    pv.sll.sc.b     x24, x18, x18
+    pv.sll.sc.b     x25, x19, x19
+
+    pv.sll.sci.b    x26, x18, 1
+    pv.sll.sci.b    x27, x19, 2
+    pv.sll.sci.b    x28, x18, 16
+    pv.sll.sci.b    x29, x19, 31
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.or.sc.h     x22, x18, x19
+    pv.or.sc.h     x23, x19, x18
+    pv.or.sc.h     x24, x18, x18
+    pv.or.sc.h     x25, x19, x19
+
+    pv.or.sci.h    x26, x18, 24
+    pv.or.sci.h    x27, x19, 18
+    pv.or.sci.h    x28, x18, 27
+    pv.or.sci.h    x29, x19, 6
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.or.sc.b     x22, x18, x19
+    pv.or.sc.b     x23, x19, x18
+    pv.or.sc.b     x24, x18, x18
+    pv.or.sc.b     x25, x19, x19
+
+    pv.or.sci.b    x26, x18, 16
+    pv.or.sci.b    x27, x19, 4
+    pv.or.sci.b    x28, x18, 3
+    pv.or.sci.b    x29, x19, 26
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.xor.sc.h     x22, x18, x19
+    pv.xor.sc.h     x23, x19, x18
+    pv.xor.sc.h     x24, x18, x18
+    pv.xor.sc.h     x25, x19, x19
+
+    pv.xor.sci.h    x26, x18, 28
+    pv.xor.sci.h    x27, x19, 13
+    pv.xor.sci.h    x28, x18, 4
+    pv.xor.sci.h    x29, x19, 5
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.xor.sc.b     x22, x18, x19
+    pv.xor.sc.b     x23, x19, x18
+    pv.xor.sc.b     x24, x18, x18
+    pv.xor.sc.b     x25, x19, x19
+
+    pv.xor.sci.b    x26, x18, 2
+    pv.xor.sci.b    x27, x19, 16
+    pv.xor.sci.b    x28, x18, 21
+    pv.xor.sci.b    x29, x19, 5
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.and.sc.h     x22, x18, x19
+    pv.and.sc.h     x23, x19, x18
+    pv.and.sc.h     x24, x18, x18
+    pv.and.sc.h     x25, x19, x19
+
+    pv.and.sci.h    x26, x18, 2
+    pv.and.sci.h    x27, x19, 9
+    pv.and.sci.h    x28, x18, 15
+    pv.and.sci.h    x29, x19, 24
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.and.sc.b     x22, x18, x19
+    pv.and.sc.b     x23, x19, x18
+    pv.and.sc.b     x24, x18, x18
+    pv.and.sc.b     x25, x19, x19
+
+    pv.and.sci.b    x26, x18, 20
+    pv.and.sci.b    x27, x19, 11
+    pv.and.sci.b    x28, x18, 23
+    pv.and.sci.b    x29, x19, 14
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    pv.abs.h     x22, x18
+    pv.abs.h     x23, x19
+
+    pv.abs.b    x26, x18
+    pv.abs.b    x27, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
+
+    # pv.extract.h    x22, x18, 23
+    # pv.extract.h    x23, x19, 11
+    # pv.extract.b    x24, x18, 2
+    # pv.extract.b    x25, x19, 25
+
+    # pv.extractu.h   x26, x18, 28
+    # pv.extractu.h   x27, x19, 13
+    # pv.extractu.b   x28, x18, 22
+    # pv.extractu.b   x29, x19, 6
+
+    # sw  x22, 4(sp)
+    # sw  x23, 8(sp)
+    # sw  x24, 12(sp)
+    # sw  x25, 16(sp)
+    # sw  x26, 20(sp)
+    # sw  x27, 24(sp)
+    # sw  x28, 28(sp)
+    # sw  x29, 32(sp)
+
+    # pv.xor.sc.b x18, x24, x29
+    # pv.xor.sc.b x19, x22, x25
+
+
+    # pv.insert.h    x22, x18, 23
+    # pv.insert.h    x23, x19, 11
+    # pv.insert.b    x24, x18, 2
+    # pv.insert.b    x25, x19, 25
+
+    # sw  x22, 4(sp)
+    # sw  x23, 8(sp)
+    # sw  x24, 12(sp)
+    # sw  x25, 16(sp)
+    # sw  x26, 20(sp)
+    # sw  x27, 24(sp)
+    # sw  x28, 28(sp)
+    # sw  x29, 32(sp)
+
     sub x20, x20, x21
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x22, x25
+
 
 bne x20, x0, loopALU
