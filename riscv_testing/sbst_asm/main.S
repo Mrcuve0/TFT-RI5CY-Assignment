@@ -62,9 +62,15 @@ _start:
 //35.85% in 9059s div+mul+(sra+srl+xor+or+and+add+sub+sltu+slets)VEC_MODE8 
 
 // ALU Patterns
-//#include "patterns_lfsr2_alu_unit.S"    
-      
-//81.98% in 150s for int_div 
+#include "patterns_lfsr2_alu_unit.S" 
+
+// Additional ALU ATPG Patterns (to use with LFSR2 ALU)
+#include "atpg_patterns_FF1.S"
+#include "atpg_patterns_FL1.S"
+#include "atpg_patterns_CNT.S"
+#include "atpg_patterns_CLB.S" 
+
+//81.98% in 150s for int_div  
 //#include "atpg_patterns_divu.S"
 //#include "atpg_patterns_div.S"
 //#include "atpg_patterns_remu.S"
@@ -76,7 +82,7 @@ _start:
 //31.72% in 6669s for mul_unit 800
 //27.86% in 860 for mul_unit 100
 //#include "patterns_lfsr_mul_unit.S"
-#include "patterns_lfsr2_mul_unit.S" 
+//#include "patterns_lfsr2_mul_unit.S" 
 //#include "patterns_lfsr3_mul_unit.S" 
       
 // SRA+SRL 17.08% in 641s for alu_i
