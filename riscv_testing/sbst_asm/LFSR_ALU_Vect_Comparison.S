@@ -4,7 +4,7 @@ li x19, 0xc7071b57 // Random init number
 li x20, 0x00000004 // 4 iterations
 li x21, 0x00000001
 
-LoopALU_Vect_Comparison_1
+LoopALU_Vect_Comparison_1:
 
     #  __      __       _             _       _    _____                                 _                    ____            
     #  \ \    / /      | |           (_)     | |  / ____|                               (_)                  / __ \           
@@ -674,7 +674,7 @@ li x19, 0x98360e77 // Random init number
 li x20, 0x00000004 // 4 iterations
 li x21, 0x00000001
 
-LoopALU_Vect_Comparison_2
+LoopALU_Vect_Comparison_2:
 
     #  __      __       _             _       _    _____                                 _                    ____            
     #  \ \    / /      | |           (_)     | |  / ____|                               (_)                  / __ \           
@@ -1345,7 +1345,7 @@ li x19, 0x98a88e77 // Random init number
 li x20, 0x00000004 // 4 iterations
 li x21, 0x00000001
 
-LoopALU_Vect_Comparison_3
+LoopALU_Vect_Comparison_3:
 
     #  __      __       _             _       _    _____                                 _                    ____            
     #  \ \    / /      | |           (_)     | |  / ____|                               (_)                  / __ \           
@@ -2015,7 +2015,7 @@ li x19, 0xdfaa14ba // Random init number
 li x20, 0x00000004 // 4 iterations
 li x21, 0x00000001
 
-LoopALU_Vect_Comparison_4
+LoopALU_Vect_Comparison_4:
 
     #  __      __       _             _       _    _____                                 _                    ____            
     #  \ \    / /      | |           (_)     | |  / ____|                               (_)                  / __ \           

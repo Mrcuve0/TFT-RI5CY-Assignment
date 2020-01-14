@@ -62,8 +62,12 @@ _start:
 //35.85% in 9059s div+mul+(sra+srl+xor+or+and+add+sub+sltu+slets)VEC_MODE8 
 
 // ALU Patterns
+#include "LFSR_ALU_Vect_Comparison.S"
+#include "LFSR_ALU_General.S"
+#include "LFSR_ALU_Vect_Ops.S"
 #include "LFSR_ALU_Bit_Manipulation.S"
-#include "patterns_lfsr2_alu_unit.S"  
+#include "LFSR_ALU_Riscv_Classic.S"
+//#include "patterns_lfsr2_alu_unit.S"  
 
 // Additional ALU ATPG Patterns (to use with LFSR2 ALU)
 //#include "atpg_patterns_FF1.S"
