@@ -1,8 +1,8 @@
  #faults  testcov  instance name (type)
  -------  -------  -----------------------
-   72788   20.36%  /  (top_module)
-   72788   20.36%     /ex_stage_i  (riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5)
-   32094   45.14%        /ex_stage_i/alu_i  (riscv_alu_SHARED_INT_DIV0_FPU0)
+   72788   19.45%  /  (top_module)
+   72788   19.45%     /ex_stage_i  (riscv_ex_stage_FPU0_FP_DIVSQRT0_SHARED_FP0_SHARED_DSP_MULT0_SHARED_INT_DIV0_APU_NARGS_CPU3_APU_WOP_CPU6_APU_NDSFLAGS_CPU15_APU_NUSFLAGS_CPU5)
+   32094   43.07%        /ex_stage_i/alu_i  (riscv_alu_SHARED_INT_DIV0_FPU0)
      340   83.82%           /ex_stage_i/alu_i/alu_popcnt_i  (alu_popcnt)
      416   66.83%           /ex_stage_i/alu_i/alu_ff_i  (alu_ff)
     5280    0.00%           /ex_stage_i/alu_i/int_div_div_i  (riscv_alu_div)

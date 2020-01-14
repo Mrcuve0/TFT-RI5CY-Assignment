@@ -2,14 +2,34 @@
 
 # li x18, 0x0000002b // Random init number
 # li x19, 0xffeeffee // Random init number
-li x18, 0xd8ce1f45 // Random init number
-li x19, 0x6ba55e43 // Random init number
-
 li x20, 0x00000004 // 100 iterations
-
 li x21, 0x00000001
 
-loopALU:
+li x15, 0x00000003
+li x16, 0x00000002
+
+
+li x18, 0xd8ce1f45 // Random init number
+li x19, 0x6ba55e43 // Random init number
+j OPsALU  # jump to OPsALU
+
+ALU_round_2: # x15 = 3
+    li x18, 0xb7f1b0d6 // Random init number
+    li x19, 0x13227978 // Random init number
+j OPsALU  # jump to OPsALU
+
+ALU_round_3: # x16 = 2
+    li x18, 0x8e277dfe // Random init number
+    li x19, 0xb18082bf // Random init number
+j OPsALU  # jump to OPsALU
+
+ALU_round_4: # x21 = 1
+    li x18, 0xac4258ef // Random init number
+    li x19, 0x3a10c5b6 // Random init number
+j OPsALU  # jump to OPsALU
+
+
+OPsALU:
 
     #   _____  _____  _____  _______      __   _____ _               _         ____            
     #  |  __ \|_   _|/ ____|/ ____\ \    / /  / ____| |             (_)       / __ \           
@@ -40,7 +60,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     slti  x22, x18, 0x3f1
@@ -63,7 +83,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     xor  x22, x18, x19
@@ -86,7 +106,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     or  x22, x18, x19
@@ -109,7 +129,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     and  x22, x18, x19
@@ -132,7 +152,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     # sll  x22, x18, x19
@@ -155,7 +175,7 @@ loopALU:
     # sw  x29, 32(sp)
 
     # pv.xor.sc.b x18, x24, x29
-    # pv.xor.sc.b x19, x22, x25
+    # pv.xor.sc.b x19, x23, x27
 
 
     # srl  x22, x18, x19
@@ -178,7 +198,7 @@ loopALU:
     # sw  x29, 32(sp)
 
     # pv.xor.sc.b x18, x24, x29
-    # pv.xor.sc.b x19, x22, x25
+    # pv.xor.sc.b x19, x23, x27
 
 
     # sra  x22, x18, x19
@@ -201,7 +221,7 @@ loopALU:
     # sw  x29, 32(sp)
 
     # pv.xor.sc.b x18, x24, x29
-    # pv.xor.sc.b x19, x22, x25
+    # pv.xor.sc.b x19, x23, x27
 
 
     sub  x22, x18, x19
@@ -219,7 +239,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     slt  x22, x18, x19
@@ -242,7 +262,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     # #   ____  _ _     __  __             _             _       _   _                ____            
@@ -274,7 +294,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     p.insert  x22, x18, 14, 7
@@ -297,7 +317,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     p.bclr  x22, x18, 9, 11
@@ -320,7 +340,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     p.ff1   x22, x25
@@ -343,7 +363,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     p.clb   x22, x25
@@ -366,7 +386,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     p.ror   x22, x18, x19 
@@ -380,7 +400,7 @@ loopALU:
     sw  x25, 16(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
 
@@ -400,7 +420,7 @@ loopALU:
     sw  x23, 8(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     p.slet  x22, x18, x19
@@ -423,7 +443,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     p.min  x22, x18, x19
@@ -446,7 +466,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     p.max  x22, x18, x19
@@ -469,7 +489,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     p.exths x22, x18
@@ -494,7 +514,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     p.clip  x22, x18, 28
@@ -517,7 +537,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     p.clipr  x22, x18, x19
@@ -540,7 +560,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     p.addN  x22, x18, x19, 15
@@ -563,7 +583,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     p.adduN  x22, x18, x19, 12
@@ -586,7 +606,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     p.adduRN  x22, x18, x19, 13
@@ -609,7 +629,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     p.adduNr  x22, x18, x19
@@ -632,7 +652,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     p.adduRNr  x22, x18, x19
@@ -655,7 +675,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     p.subuN  x22, x18, x19, 10
@@ -678,7 +698,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     p.subuRN  x22, x18, x19, 5
@@ -701,7 +721,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     p.subuNr  x22, x18, x19
@@ -724,7 +744,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     p.subuRNr  x26, x18, x19
@@ -742,7 +762,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     #  __      __       _             _       _            _     _    _    ____            
@@ -754,6 +774,29 @@ loopALU:
     #                                                                           | |        
     #                                                                           |_|        
 
+    pv.add.h     x22, x18, x19
+    pv.add.h     x23, x19, x18
+    pv.add.h     x24, x18, x18
+    pv.add.h     x25, x19, x19
+
+    pv.add.b    x26, x18, x19
+    pv.add.b    x27, x19, x18
+    pv.add.b    x28, x18, x18
+    pv.add.b    x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x23, x27
+ 
+ 
     pv.add.sc.h     x22, x18, x19
     pv.add.sc.h     x23, x19, x18
     pv.add.sc.h     x24, x18, x18
@@ -774,7 +817,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.add.sc.b     x22, x18, x19
@@ -797,7 +840,30 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
+
+
+    pv.sub.h     x22, x18, x19
+    pv.sub.h     x23, x19, x18
+    pv.sub.h     x24, x18, x18
+    pv.sub.h     x25, x19, x19
+
+    pv.sub.b    x26, x18, x19
+    pv.sub.b    x27, x19, x18
+    pv.sub.b    x28, x18, x18
+    pv.sub.b    x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x23, x27
 
     
     pv.sub.sc.h     x22, x18, x19
@@ -820,7 +886,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.sub.sc.b     x22, x18, x19
@@ -843,7 +909,30 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
+
+
+    pv.avg.h     x22, x18, x19
+    pv.avg.h     x23, x19, x18
+    pv.avg.h     x24, x18, x18
+    pv.avg.h     x25, x19, x19
+
+    pv.avg.b    x26, x18, x19
+    pv.avg.b    x27, x19, x18
+    pv.avg.b    x28, x18, x18 
+    pv.avg.b    x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.avg.sc.h     x22, x18, x19
@@ -866,7 +955,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.avg.sc.b     x22, x18, x19
@@ -889,7 +978,30 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
+
+
+    pv.avgu.h     x22, x18, x19
+    pv.avgu.h     x23, x19, x18
+    pv.avgu.h     x24, x18, x18
+    pv.avgu.h     x25, x19, x19
+
+    pv.avgu.b    x26, x18, x19
+    pv.avgu.b    x27, x19, x18
+    pv.avgu.b    x28, x18, x18
+    pv.avgu.b    x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.avgu.sc.h     x22, x18, x19
@@ -912,7 +1024,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.avgu.sc.b     x22, x18, x19
@@ -935,7 +1047,30 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
+
+
+    pv.min.h     x22, x18, x19
+    pv.min.h     x23, x19, x18
+    pv.min.h     x24, x18, x18
+    pv.min.h     x25, x19, x19
+
+    pv.min.b    x26, x18, x19
+    pv.min.b    x27, x19, x18
+    pv.min.b    x28, x18, x18
+    pv.min.b    x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.min.sc.h     x22, x18, x19
@@ -958,7 +1093,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.min.sc.b     x22, x18, x19
@@ -981,7 +1116,30 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
+
+
+    pv.minu.h     x22, x18, x19
+    pv.minu.h     x23, x19, x18
+    pv.minu.h     x24, x18, x18
+    pv.minu.h     x25, x19, x19
+
+    pv.minu.b    x26, x18, x19
+    pv.minu.b    x27, x19, x18
+    pv.minu.b    x28, x18, x18
+    pv.minu.b    x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.minu.sc.h     x22, x18, x19
@@ -1004,7 +1162,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.minu.sc.b     x22, x18, x19
@@ -1027,7 +1185,30 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
+
+
+    pv.max.h     x22, x18, x19
+    pv.max.h     x23, x19, x18
+    pv.max.h     x24, x18, x18
+    pv.max.h     x25, x19, x19
+
+    pv.max.b    x26, x18, x19
+    pv.max.b    x27, x19, x18
+    pv.max.b    x28, x18, x18
+    pv.max.b    x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.max.sc.h     x22, x18, x19
@@ -1050,7 +1231,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.max.sc.b     x22, x18, x19
@@ -1073,7 +1254,30 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
+
+
+    pv.maxu.h     x22, x18, x19
+    pv.maxu.h     x23, x19, x18
+    pv.maxu.h     x24, x18, x18
+    pv.maxu.h     x25, x19, x19
+
+    pv.maxu.b    x26, x18, x19
+    pv.maxu.b    x27, x19, x18
+    pv.maxu.b    x28, x18, x18
+    pv.maxu.b    x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.maxu.sc.h     x22, x18, x19
@@ -1096,7 +1300,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.maxu.sc.b     x22, x18, x19
@@ -1119,7 +1323,30 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
+
+
+    pv.srl.h     x22, x18, x19
+    pv.srl.h     x23, x19, x18
+    pv.srl.h     x24, x18, x18
+    pv.srl.h     x25, x19, x19
+
+    pv.srl.b    x26, x18, x19
+    pv.srl.b    x27, x19, x18
+    pv.srl.b    x28, x18, x18
+    pv.srl.b    x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.srl.sc.h     x22, x18, x19
@@ -1142,7 +1369,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.srl.sc.b     x22, x18, x19
@@ -1165,7 +1392,30 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
+
+
+    pv.sra.h     x22, x18, x19
+    pv.sra.h     x23, x19, x18
+    pv.sra.h     x24, x18, x18
+    pv.sra.h     x25, x19, x19
+
+    pv.sra.b    x26, x18, x19
+    pv.sra.b    x27, x19, x18
+    pv.sra.b    x28, x18, x18
+    pv.sra.b    x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.sra.sc.h     x22, x18, x19
@@ -1188,7 +1438,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.sra.sc.b     x22, x18, x19
@@ -1211,7 +1461,30 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
+
+
+    pv.sll.h     x22, x18, x19
+    pv.sll.h     x23, x19, x18
+    pv.sll.h     x24, x18, x18
+    pv.sll.h     x25, x19, x19
+
+    pv.sll.b    x26, x18, x19
+    pv.sll.b    x27, x19, x18
+    pv.sll.b    x28, x18, x18
+    pv.sll.b    x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.sll.sc.h     x22, x18, x19
@@ -1234,7 +1507,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.sll.sc.b     x22, x18, x19
@@ -1257,7 +1530,30 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
+
+
+    pv.or.h     x22, x18, x19
+    pv.or.h     x23, x19, x18
+    pv.or.h     x24, x18, x18
+    pv.or.h     x25, x19, x19
+
+    pv.or.b    x26, x18, x19
+    pv.or.b    x27, x19, x18
+    pv.or.b    x28, x18, x18
+    pv.or.b    x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.or.sc.h     x22, x18, x19
@@ -1280,7 +1576,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.or.sc.b     x22, x18, x19
@@ -1303,7 +1599,30 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
+
+
+    pv.xor.h     x22, x18, x19
+    pv.xor.h     x23, x19, x18
+    pv.xor.h     x24, x18, x18
+    pv.xor.h     x25, x19, x19
+
+    pv.xor.b    x26, x18, x19
+    pv.xor.b    x27, x19, x18
+    pv.xor.b    x28, x18, x18
+    pv.xor.b    x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.xor.sc.h     x22, x18, x19
@@ -1326,7 +1645,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.xor.sc.b     x22, x18, x19
@@ -1349,7 +1668,30 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
+
+
+    pv.and.h     x22, x18, x19
+    pv.and.h     x23, x19, x18
+    pv.and.h     x24, x18, x18
+    pv.and.h     x25, x19, x19
+
+    pv.and.b    x26, x18, x19
+    pv.and.b    x27, x19, x18
+    pv.and.b    x28, x18, x18
+    pv.and.b    x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x24, x29
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.and.sc.h     x22, x18, x19
@@ -1372,7 +1714,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.and.sc.b     x22, x18, x19
@@ -1395,7 +1737,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.abs.h     x22, x18
@@ -1414,7 +1756,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     # pv.extract.h    x22, x18, 3
@@ -1437,7 +1779,7 @@ loopALU:
     # sw  x29, 32(sp)
 
     # pv.xor.sc.b x18, x24, x29
-    # pv.xor.sc.b x19, x22, x25
+    # pv.xor.sc.b x19, x23, x27
 
 
     # pv.insert.h    x22, x18, 3
@@ -1454,10 +1796,8 @@ loopALU:
     # sw  x28, 28(sp)
     # sw  x29, 32(sp)
 
-    sub x20, x20, x21
-
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     #  __      __       _             _       _    _____                                 _                    ____            
@@ -1489,7 +1829,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmpeq.sc.h   x22, x18, x19
@@ -1512,7 +1852,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmpeq.sci.h   x22, x18, 4
@@ -1535,7 +1875,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmpne.h   x22, x18, x19
@@ -1558,7 +1898,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmpne.sc.h   x22, x18, x19
@@ -1581,7 +1921,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmpne.sci.h   x22, x18, 4
@@ -1604,7 +1944,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmpgt.h   x22, x18, x19
@@ -1627,7 +1967,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmpgt.sc.h   x22, x18, x19
@@ -1650,7 +1990,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmpgt.sci.h   x22, x18, 19
@@ -1673,7 +2013,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmpge.h   x22, x18, x19
@@ -1696,7 +2036,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmpge.sc.h   x22, x18, x19
@@ -1719,7 +2059,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmpge.sci.h   x22, x18, 10
@@ -1742,7 +2082,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmplt.h   x22, x18, x19
@@ -1765,7 +2105,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmplt.sc.h   x22, x18, x19
@@ -1788,7 +2128,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmplt.sci.h   x22, x18, 18
@@ -1811,7 +2151,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmple.sc.h   x22, x18, x19
@@ -1834,7 +2174,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmple.sci.h   x22, x18, 15
@@ -1857,7 +2197,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
     
     
     pv.cmpgtu.h   x22, x18, x19
@@ -1880,7 +2220,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmpgtu.sc.h   x22, x18, x19
@@ -1903,7 +2243,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmpgtu.sci.h   x22, x18, 8
@@ -1926,7 +2266,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmpgeu.h   x22, x18, x19
@@ -1949,7 +2289,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmpgeu.sc.h   x22, x18, x19
@@ -1972,7 +2312,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmpgeu.sci.h   x22, x18, 11
@@ -1995,7 +2335,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmpltu.h   x22, x18, x19
@@ -2018,7 +2358,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmpltu.sc.h   x22, x18, x19
@@ -2041,7 +2381,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmpltu.sci.h   x22, x18, 28
@@ -2064,7 +2404,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmpleu.sc.h   x22, x18, x19
@@ -2087,7 +2427,7 @@ loopALU:
     sw  x29, 32(sp)
 
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
     pv.cmpleu.sci.h   x22, x18, 16
@@ -2109,9 +2449,12 @@ loopALU:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
+    sub x20, x20, x21
+
     pv.xor.sc.b x18, x24, x29
-    pv.xor.sc.b x19, x22, x25
+    pv.xor.sc.b x19, x23, x27
 
 
-
-bne x20, x0, loopALU
+beq x20, x15, ALU_round_2 # x15 = 3
+beq x20, x16, ALU_round_3 # x16 = 2
+beq x20, x21, ALU_round_4 # x21 = 1

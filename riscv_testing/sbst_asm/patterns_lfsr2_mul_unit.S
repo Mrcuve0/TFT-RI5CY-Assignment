@@ -1,9 +1,7 @@
-# li sp, 0x00
-
 li x18, 0xd8ce1f45 // Random init number
 li x19, 0x6ba55e43 // Random init number
 
-li x20, 0x00000019 // 100 iterations
+li x20, 0x00000019 // 25 iterations
 
 li x21, 0x00000001
 
@@ -64,8 +62,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     #   __   __        _     _ _     __  __       _    ____            
@@ -96,8 +94,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     p.mulsN   x22, x18, x19, 1
@@ -119,8 +117,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     p.mulsRN   x22, x18, x19, 1
@@ -142,8 +140,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     p.mulu   x22, x18, x19
@@ -165,8 +163,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     p.muluN   x22, x18, x19, 5
@@ -188,8 +186,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     p.muluRN   x22, x18, x19, 29
@@ -211,8 +209,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     #   __   __        _     _ _     __  __          _____    ____            
@@ -243,8 +241,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     p.macsrN   x22, x18, x19, 8
@@ -266,8 +264,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     p.macuN   x22, x18, x19, 3
@@ -289,8 +287,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     p.macuRN   x22, x18, x19, 2
@@ -312,8 +310,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     #   _____        _     _____               _            _      ____            
@@ -324,6 +322,29 @@ loopMUL:
     #  |_____/ \___/ \__| |_|   |_|  \___/ \__,_|\__,_|\___|\__|  \____/| .__/|___/
     #                                                                   | |        
     #                                                                   |_|        
+
+    pv.dotup.h x22, x18, x19
+    pv.dotup.h x23, x19, x18
+    pv.dotup.h x24, x18, x18
+    pv.dotup.h x25, x19, x19
+
+    pv.dotup.b x26, x18, x19
+    pv.dotup.b x27, x19, x18
+    pv.dotup.b x28, x18, x18
+    pv.dotup.b x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
+
 
     pv.dotup.sc.h x22, x18, x19
     pv.dotup.sc.h x23, x19, x18
@@ -344,8 +365,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     pv.dotup.sc.b x22, x18, x19
@@ -367,8 +388,31 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
+
+
+    pv.dotusp.h x22, x18, x19
+    pv.dotusp.h x23, x19, x18
+    pv.dotusp.h x24, x18, x18
+    pv.dotusp.h x25, x19, x19
+
+    pv.dotusp.b x26, x18, x19
+    pv.dotusp.b x27, x19, x18
+    pv.dotusp.b x28, x18, x18
+    pv.dotusp.b x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     pv.dotusp.sc.h x22, x18, x19
@@ -390,8 +434,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     pv.dotsp.sc.b x22, x18, x19
@@ -413,8 +457,31 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
+
+
+    pv.sdotup.h x22, x18, x19
+    pv.sdotup.h x23, x19, x18
+    pv.sdotup.h x24, x18, x18
+    pv.sdotup.h x25, x19, x19
+
+    pv.sdotup.b x26, x18, x19
+    pv.sdotup.b x27, x19, x18
+    pv.sdotup.b x28, x18, x18
+    pv.sdotup.b x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     pv.sdotup.sc.h x22, x18, x19
@@ -436,8 +503,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     pv.sdotup.sc.b x22, x18, x19
@@ -459,8 +526,31 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
+
+
+    pv.sdotusp.h x22, x18, x19
+    pv.sdotusp.h x23, x19, x18
+    pv.sdotusp.h x24, x18, x18
+    pv.sdotusp.h x25, x19, x19
+
+    pv.sdotusp.b x26, x18, x19
+    pv.sdotusp.b x27, x19, x18
+    pv.sdotusp.b x28, x18, x18
+    pv.sdotusp.b x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     pv.sdotusp.sc.h x22, x18, x19
@@ -482,8 +572,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     pv.sdotusp.sc.b x22, x18, x19
@@ -505,8 +595,31 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
+
+
+    pv.sdotsp.h x22, x18, x19
+    pv.sdotsp.h x23, x19, x18
+    pv.sdotsp.h x24, x18, x18
+    pv.sdotsp.h x25, x19, x19
+
+    pv.sdotsp.b x26, x18, x19
+    pv.sdotsp.b x27, x19, x18
+    pv.sdotsp.b x28, x18, x18
+    pv.sdotsp.b x29, x19, x19
+
+    sw  x22, 4(sp)
+    sw  x23, 8(sp)
+    sw  x24, 12(sp)
+    sw  x25, 16(sp)
+    sw  x26, 20(sp)
+    sw  x27, 24(sp)
+    sw  x28, 28(sp)
+    sw  x29, 32(sp)
+
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     pv.sdotsp.sc.h x22, x18, x19
@@ -528,8 +641,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     pv.sdotsp.sc.b x22, x18, x19
@@ -551,8 +664,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     #    _____ _            __  __ _          _______           _    
@@ -583,8 +696,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     pv.shuffle.b x22, x18, x19
@@ -597,8 +710,8 @@ loopMUL:
     sw  x24, 12(sp)
     sw  x25, 16(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     pv.shuffleI0.sci.b x22, x18, 6
@@ -620,8 +733,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     pv.shuffleI2.sci.b x22, x18, 8
@@ -643,8 +756,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     pv.shuffle2.h x22, x18, x19
@@ -666,8 +779,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     pv.pack.h x22, x18, x19
@@ -689,8 +802,8 @@ loopMUL:
     sw  x28, 28(sp)
     sw  x29, 32(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     pv.packlo.b x22, x18, x19
@@ -703,8 +816,8 @@ loopMUL:
     sw  x24, 12(sp)
     sw  x25, 16(sp)
 
-    pv.xor.sc.b x18, x23, x25
-    pv.xor.sc.b x19, x24, x22
+    pv.xor.sc.b x18, x22, x26
+    pv.xor.sc.b x19, x24, x27
 
 
     sub x20, x20, x21
