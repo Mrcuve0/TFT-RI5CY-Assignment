@@ -1,6 +1,6 @@
-# vsim -c tb_top_vopt "+firmware=/home/s256813/TFT-RI5CY-Assignment/riscv_testing/sbst_asm/sbst.hex" "+dumpports+nocollapse" -suppress 3015 -do "/home/s256813/TFT-RI5CY-Assignment/riscv_testing/vsim.tcl" 
-# Start time: 14:03:49 on Jan 14,2020
-# Loading /tmp/s256813@localhost.localdomain_dpi_26519/linux_x86_64_gcc-4.7.4/export_tramp.so
+# vsim -c tb_top_vopt "+firmware=/home/s256813/riscv_testing/sbst_asm/sbst.hex" "+dumpports+nocollapse" -suppress 3015 -do "/home/s256813/riscv_testing/vsim.tcl" 
+# Start time: 20:24:56 on Jan 14,2020
+# Loading /tmp/s256813@po.polito.it_dpi_24730/linux_x86_64_gcc-4.7.4/export_tramp.so
 # //  Questa Sim-64
 # //  Version 10.5c_4 linux_x86_64 Nov 30 2016
 # //
@@ -217,9 +217,9 @@
 # Loading work.riscv_random_stall(fast__1)
 # Loading work.riscv_random_interrupt_generator_sv_unit(fast)
 # Loading work.riscv_random_interrupt_generator(fast)
-# Compiling /tmp/s256813@localhost.localdomain_dpi_26519/linux_x86_64_gcc-4.7.4/exportwrapper.c
-# Loading /tmp/s256813@localhost.localdomain_dpi_26519/linux_x86_64_gcc-4.7.4/vsim_auto_compile.so
-# do /home/s256813/TFT-RI5CY-Assignment/riscv_testing/vsim.tcl
+# Compiling /tmp/s256813@po.polito.it_dpi_24730/linux_x86_64_gcc-4.7.4/exportwrapper.c
+# Loading /tmp/s256813@po.polito.it_dpi_24730/linux_x86_64_gcc-4.7.4/vsim_auto_compile.so
+# do /home/s256813/riscv_testing/vsim.tcl
 # 1
 # EXIT SUCCESS
 # ** Note: $finish    : /home/s256813/riscv_testing/tb/core/tb_top.sv(137)
@@ -227,5 +227,5 @@
 # 1
 # Break in Module tb_top at /home/s256813/riscv_testing/tb/core/tb_top.sv line 137
 # Stopped at /home/s256813/riscv_testing/tb/core/tb_top.sv line 137
-# End time: 14:11:52 on Jan 14,2020, Elapsed time: 0:08:03
+# End time: 20:25:47 on Jan 14,2020, Elapsed time: 0:00:51
 # Errors: 0, Warnings: 0
