@@ -71,19 +71,19 @@ _start:
 #include "atpg_patterns_CLB.S" 
 
 //81.98% in 150s for int_div  
-//#include "atpg_patterns_divu.S"
-//#include "atpg_patterns_div.S"
-//#include "atpg_patterns_remu.S"
-//#include "atpg_patterns_rem.S"
-//#include "patterns_div_unit.S"
+#include "atpg_patterns_divu.S"
+#include "atpg_patterns_div.S"
+#include "atpg_patterns_remu.S"
+#include "atpg_patterns_rem.S"
+#include "patterns_div_unit.S"
 //#include "patterns_lfsr_div_unit.S" 
-//#include "patterns_lfsr2_div_unit.S" 
+#include "patterns_lfsr2_div_unit.S" 
 
 //31.72% in 6669s for mul_unit 800
 //27.86% in 860 for mul_unit 100
 //#include "patterns_lfsr_mul_unit.S"
-//#include "patterns_lfsr2_mul_unit.S" 
-//#include "patterns_lfsr3_mul_unit.S" 
+#include "patterns_lfsr2_mul_unit.S" 
+#include "patterns_lfsr3_mul_unit.S" 
       
 // SRA+SRL 17.08% in 641s for alu_i
 // SRA+SRL 17.07% in 392s for alu_i (swap + self) (constraints on VEC_MODE8 (11))
