@@ -62,11 +62,11 @@ _start:
 //35.85% in 9059s div+mul+(sra+srl+xor+or+and+add+sub+sltu+slets)VEC_MODE8 
 
 // ALU Patterns
-//#include "LFSR_ALU_Vect_Comparison.S"
-//#include "LFSR_ALU_General.S"
-//#include "LFSR_ALU_Vect_Ops.S"
-//#include "LFSR_ALU_Bit_Manipulation.S"
-//#include "LFSR_ALU_Riscv_Classic.S"
+#include "LFSR_ALU_Vect_Comparison.S"
+#include "LFSR_ALU_General.S"
+#include "LFSR_ALU_Vect_Ops.S"
+#include "LFSR_ALU_Bit_Manipulation.S"
+#include "LFSR_ALU_Riscv_Classic.S"
 //#include "patterns_lfsr2_alu_unit.S"  
 
 // Additional ALU ATPG Patterns (to use with LFSR2 ALU)
@@ -82,18 +82,19 @@ _start:
 //#include "atpg_patterns_rem.S"
 //#include "patterns_div_unit.S"
 //#include "patterns_lfsr_div_unit.S" 
+
 #include "LFSR_DIV_Smart_Patterns.S"
-#include "patterns_lfsr2_div_unit.S" 
+#include "patterns_lfsr2_div_unit.S"
 
 //31.72% in 6669s for mul_unit 800
 //27.86% in 860 for mul_unit 100
-//#include "lab4_patterns_mul.S"
-//#include "lab4_patterns_mulh.S"
+#include "lab4_patterns_mul.S"
+#include "lab4_patterns_mulh.S"
 //#include "lab4_patterns_mulhsu.S"
 //#include "lab4_patterns_mulhu.S"
 //#include "patterns_lfsr_mul_unit.S"
 #include "patterns_lfsr2_mul_unit.S" 
-#include "patterns_lfsr3_mul_unit.S"
+//#include "patterns_lfsr3_mul_unit.S"
       
 // SRA+SRL 17.08% in 641s for alu_i
 // SRA+SRL 17.07% in 392s for alu_i (swap + self) (constraints on VEC_MODE8 (11))
