@@ -92,7 +92,7 @@ _start:
 //#include "lab4_patterns_mulhu.S"
 //#include "patterns_lfsr_mul_unit.S"
 #include "patterns_lfsr2_mul_unit.S" 
-#include "patterns_lfsr3_mul_unit.S" 
+#include "patterns_lfsr3_mul_unit.S"
       
 // SRA+SRL 17.08% in 641s for alu_i
 // SRA+SRL 17.07% in 392s for alu_i (swap + self) (constraints on VEC_MODE8 (11))
