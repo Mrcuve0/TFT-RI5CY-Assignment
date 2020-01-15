@@ -62,11 +62,11 @@ _start:
 //35.85% in 9059s div+mul+(sra+srl+xor+or+and+add+sub+sltu+slets)VEC_MODE8 
 
 // ALU Patterns
-#include "LFSR_ALU_Vect_Comparison.S"
-#include "LFSR_ALU_General.S"
-#include "LFSR_ALU_Vect_Ops.S"
-#include "LFSR_ALU_Bit_Manipulation.S"
-#include "LFSR_ALU_Riscv_Classic.S"
+//#include "LFSR_ALU_Vect_Comparison.S"
+//#include "LFSR_ALU_General.S"
+//#include "LFSR_ALU_Vect_Ops.S"
+//#include "LFSR_ALU_Bit_Manipulation.S"
+//#include "LFSR_ALU_Riscv_Classic.S"
 //#include "patterns_lfsr2_alu_unit.S"  
 
 // Additional ALU ATPG Patterns (to use with LFSR2 ALU)
@@ -76,12 +76,13 @@ _start:
 //#include "atpg_patterns_CLB.S"
 
 //81.98% in 150s for int_div  
-#include "atpg_patterns_divu.S"
-#include "atpg_patterns_div.S"
-#include "atpg_patterns_remu.S"
-#include "atpg_patterns_rem.S"
-#include "patterns_div_unit.S"
+//#include "atpg_patterns_divu.S"
+//#include "atpg_patterns_div.S"
+//#include "atpg_patterns_remu.S"
+//#include "atpg_patterns_rem.S"
+//#include "patterns_div_unit.S"
 //#include "patterns_lfsr_div_unit.S" 
+#include "LFSR_DIV_Smart_Patterns.S"
 #include "patterns_lfsr2_div_unit.S" 
 
 //31.72% in 6669s for mul_unit 800
