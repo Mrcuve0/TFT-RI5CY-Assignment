@@ -76,11 +76,11 @@ _start:
 //#include "atpg_patterns_CLB.S"
 
 //81.98% in 150s for int_div  
-//#include "atpg_patterns_divu.S"
-//#include "atpg_patterns_div.S"
-//#include "atpg_patterns_remu.S"
-//#include "atpg_patterns_rem.S"
-//#include "patterns_div_unit.S"
+#include "atpg_patterns_divu.S"
+#include "atpg_patterns_div.S"
+#include "atpg_patterns_remu.S"
+#include "atpg_patterns_rem.S"
+#include "patterns_div_unit.S"
 //#include "patterns_lfsr_div_unit.S" 
 #include "patterns_lfsr2_div_unit.S" 
 
