@@ -22,6 +22,6 @@
             Pattern Summary Report
  -----------------------------------------------
  #internal patterns                           0
- #external patterns (dumpports_gate.evcd.fixed)  54671
-     #full_sequential patterns            54671
+ #external patterns (dumpports_gate.evcd.fixed)  47989
+     #full_sequential patterns            47989
  -----------------------------------------------
