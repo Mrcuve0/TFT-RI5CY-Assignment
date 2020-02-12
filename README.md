@@ -45,4 +45,4 @@ Please, refer to the badges "`development`" you can find at the top of each READ
 
 ### **LICENSES**
 
-All the source code related to this repo is released under the [GPLv3 license](https://raw.githubusercontent.com/Mrcuve0/TFT-RI5CY-Assignment/LICENSE)
+All the source code related to this repo is released under the [GPLv3 license](https://github.com/Mrcuve0/TFT-RI5CY-Assignment/blob/master/LICENSE)
